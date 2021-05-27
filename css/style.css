@@ -129,6 +129,9 @@ div.links {
   font-style: normal;
   line-height: 2.14;
   letter-spacing: normal;
+}
+
+div.links a {
   color: #28519d;
 }
 
@@ -168,20 +171,10 @@ img.footer-overture-logo {
   object-fit: contain;
 }
 
-div.github-org {
+a.github-org {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-img.icons-github {
-  width: 20px;
-  height: 20px;
-  margin: 0 4px 0 0;
-  object-fit: contain;
-}
-
-div.github-org p {
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -190,4 +183,12 @@ div.github-org p {
   letter-spacing: normal;
   text-align: center;
   color: #28519d;
+  text-decoration: none;
+}
+
+img.icons-github {
+  width: 20px;
+  height: 20px;
+  margin: 0 4px 0 0;
+  object-fit: contain;
 }
