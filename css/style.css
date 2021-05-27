@@ -11,7 +11,7 @@ div.wrap {
   background-size: cover;
 }
 
-div.container {
+div.main {
   margin: 223px auto 0;
   width: 510px;
 }
@@ -24,7 +24,7 @@ img.logo-copy {
   object-fit: contain;
 }
 
-div.body-block {
+div.main-body {
   box-sizing: border-box;
   width: 510px;
   height: 197px;
@@ -58,7 +58,7 @@ h1.title-text {
   color: #28519d;
 }
 
-h2.sub-header {
+h2.subtitle {
   font-size: 21px;
   font-weight: 600;
   font-stretch: normal;
@@ -70,7 +70,7 @@ h2.sub-header {
   margin: 23px 0 0;
 }
 
-p.text {
+p.body-text {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -117,7 +117,7 @@ div.footer-center {
   height: 100%;
 }
 
-div.links {
+div.footer-center-links {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -131,7 +131,7 @@ div.links {
   letter-spacing: normal;
 }
 
-div.links a {
+div.footer-center-links a {
   color: #28519d;
 }
 
@@ -152,6 +152,7 @@ div.footer-right {
   align-items: center;
   justify-content: space-between;
   width: 336px;
+  height: 100%;
 }
 
 div.powered-by {
