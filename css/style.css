@@ -1,0 +1,193 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+div.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.container {
+  margin: 223px auto 0;
+  width: 510px;
+}
+
+img.logo-copy {
+  display: block;
+  width: 294px;
+  height: 46px;
+  margin: 0 auto 40px;
+  object-fit: contain;
+}
+
+div.body-block {
+  box-sizing: border-box;
+  width: 510px;
+  height: 197px;
+  padding: 39px 25px 77px 26px;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+div.title {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+img.maple-leaf {
+  width: 22px;
+  height: 25px;
+  margin: 4px 8px 3px 0;
+  object-fit: contain;
+}
+
+h1.title-text {
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #28519d;
+}
+
+h2.sub-header {
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a32526;
+  margin: 23px 0 0;
+}
+
+p.text {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #191919;
+  margin: 12px 0 0;
+}
+
+div.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 8px 32px;
+}
+
+div.footer-left {
+  width: 336px;
+  height: 100%;
+}
+
+img.genome-canada-vector-logo {
+  width: 94px;
+  height: 56px;
+  object-fit: contain;
+}
+
+div.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 225px;
+  height: 100%;
+}
+
+div.links {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: #28519d;
+}
+
+p.copyright {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #151c3d;
+}
+
+div.footer-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 336px;
+}
+
+div.powered-by {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #151c3d;
+}
+
+img.footer-overture-logo {
+  width: 110px;
+  height: 20px;
+  margin: 3px 0 1px 2px;
+  object-fit: contain;
+}
+
+div.github-org {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img.icons-github {
+  width: 20px;
+  height: 20px;
+  margin: 0 4px 0 0;
+  object-fit: contain;
+}
+
+div.github-org p {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #28519d;
+}
