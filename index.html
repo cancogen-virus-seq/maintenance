@@ -1,24 +1,1322 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="shortcut icon" href="/images/favicon.ico"/><title>VirusSeq Portal</title><link rel="preload" href="/_next/static/css/commons.1d09a2e7.chunk.css" as="style"/><link rel="stylesheet" href="/_next/static/css/commons.1d09a2e7.chunk.css" data-n-g=""/><noscript data-n-css="true"></noscript><link rel="preload" href="/_next/static/chunks/main-8f280b5ee29b225cdeb6.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-7ec3da4c8aacd407fbc9.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.64bf4370dab6af33a2f8.js" as="script"/><link rel="preload" href="/_next/static/chunks/29107295.3e37e48dae55c9a386d4.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.a9095aca9f8fd2a1db97.js" as="script"/><link rel="preload" href="/_next/static/chunks/31d8d39b71590cb95a84f2c35ee19d66d1a35555.4919b08791280cf2cebd.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-929220933f39d354dd15.js" as="script"/><link rel="preload" href="/_next/static/chunks/07e8549b6658ce238ffb45a8e89093641127c03d.fc95dfdee470ef47f6f1.js" as="script"/><link rel="preload" href="/_next/static/chunks/415513b774a8d5fc9caa75de2ad616bf899449a5.2ec348f26453ac5c25c7.js" as="script"/><link rel="preload" href="/_next/static/chunks/484c840239a025432effd6ecc373d498fa764368.a81d5a0e4f6383e42ea8.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/index-3d34bf55913fbb5b902a.js" as="script"/></head><body><div id="__next"><style>
-          body {
-            margin: 0;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-          } /* custom! */
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <title>VirusSeq Portal</title>
+    <link rel="preload" href="/_next/static/css/commons.1d09a2e7.chunk.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/commons.1d09a2e7.chunk.css" data-n-g="" />
+    <noscript data-n-css="true"></noscript>
+    <link rel="preload" href="/_next/static/chunks/main-8f280b5ee29b225cdeb6.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/webpack-7ec3da4c8aacd407fbc9.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/framework.64bf4370dab6af33a2f8.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/29107295.3e37e48dae55c9a386d4.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/commons.a9095aca9f8fd2a1db97.js" as="script" />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/31d8d39b71590cb95a84f2c35ee19d66d1a35555.4919b08791280cf2cebd.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/pages/_app-929220933f39d354dd15.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/07e8549b6658ce238ffb45a8e89093641127c03d.fc95dfdee470ef47f6f1.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/415513b774a8d5fc9caa75de2ad616bf899449a5.2ec348f26453ac5c25c7.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/484c840239a025432effd6ecc373d498fa764368.a81d5a0e4f6383e42ea8.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/pages/index-3d34bf55913fbb5b902a.js"
+      as="script"
+    />
+  </head>
+  <body>
+    <div id="__next">
+      <style>
+        body {
+          margin: 0;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+        } /* custom! */
 
-          #__next {
-            position: absolute;
-            top: 0px;
+        #__next {
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+        }
+
+        .code {
+          background: #eee;
+          margin: 0 2px;
+          padding: 0 3px;
+        }
+      </style>
+      <div></div>
+      <style data-emotion="css 1ad42f1">
+        .css-1ad42f1 {
+          display: grid;
+          grid-template-rows: 64px 1fr 72px;
+          height: 100%;
+          font-family: Source Sans Pro, sans-serif;
+          font-size: inherit;
+          font-weight: inherit;
+          font-style: inherit;
+          font-stretch: inherit;
+          line-height: inherit;
+          letter-spacing: inherit;
+          color: #282a35;
+        }
+      </style>
+      <div class="css-1ad42f1">
+        <style data-emotion="css 1rim0ko">
+          .css-1rim0ko {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            height: 64px;
+            background: #28519d url(/images/navbar-bg.png) no-repeat;
+            -webkit-background-size: 281px;
+            background-size: 281px;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+          }
+        </style>
+        <div class="css-1rim0ko">
+          <style data-emotion="css dovx9g">
+            .css-dovx9g {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin-left: 40px;
+              cursor: pointer;
+            }
+          </style>
+          <div class="css-dovx9g">
+            <style data-emotion="css e725g0">
+              .css-e725g0 {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+              }</style
+            ><a href="/" class="css-e725g0"
+              ><img src="/images/navbar-logo.png" alt="logos for CanCOGeN and VirusSeq" width="296"
+            /></a>
+          </div>
+          <style data-emotion="css ga3b11">
+            .css-ga3b11 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              width: 100%;
+            }
+          </style>
+          <div class="css-ga3b11">
+            <style data-emotion="css ak6t2g">
+              .css-ak6t2g {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+              }
+            </style>
+            <div class="css-ak6t2g">
+              <style data-emotion="css cxg2ws">
+                .css-cxg2ws {
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  border-bottom: 5px solid transparent;
+                  box-sizing: border-box;
+                  color: #fff;
+                  cursor: pointer;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-flex: 0;
+                  -ms-flex: 0;
+                  flex: 0;
+                  font-weight: bold;
+                  height: 100%;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  padding: 0 2rem;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  white-space: nowrap;
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                  border-bottom-color: #60b3e0;
+                  color: #afd9ef;
+                }
+                .css-cxg2ws svg path {
+                  fill: #fff;
+                }
+                .css-cxg2ws:hover {
+                  border-bottom-color: #60b3e0;
+                  color: #afd9ef;
+                }
+                .css-cxg2ws:hover svg path {
+                  fill: #afd9ef;
+                }
+                .css-cxg2ws svg path {
+                  fill: #afd9ef;
+                }</style
+              ><a href="/" class="css-cxg2ws">About VirusSeq Data Portal</a
+              ><style data-emotion="css 1r2jrdn">
+                .css-1r2jrdn {
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  border-bottom: 5px solid transparent;
+                  box-sizing: border-box;
+                  color: #fff;
+                  cursor: pointer;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-flex: 0;
+                  -ms-flex: 0;
+                  flex: 0;
+                  font-weight: bold;
+                  height: 100%;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  padding: 0 2rem;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  white-space: nowrap;
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                  pointer-events: none;
+                  color: #aeafb3;
+                }
+                .css-1r2jrdn svg path {
+                  fill: #fff;
+                }
+                .css-1r2jrdn:hover {
+                  border-bottom-color: #60b3e0;
+                  color: #afd9ef;
+                }
+                .css-1r2jrdn:hover svg path {
+                  fill: #afd9ef;
+                }</style
+              ><a href="/explorer" class="css-1r2jrdn">Explore VirusSeq Data</a
+              ><style data-emotion="css 1ibmtnu">
+                .css-1ibmtnu {
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  border-bottom: 5px solid transparent;
+                  box-sizing: border-box;
+                  color: #fff;
+                  cursor: pointer;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-flex: 0;
+                  -ms-flex: 0;
+                  flex: 0;
+                  font-weight: bold;
+                  height: 100%;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  padding: 0 2rem;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  white-space: nowrap;
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                }
+                .css-1ibmtnu svg path {
+                  fill: #fff;
+                }
+                .css-1ibmtnu:hover {
+                  border-bottom-color: #60b3e0;
+                  color: #afd9ef;
+                }
+                .css-1ibmtnu:hover svg path {
+                  fill: #afd9ef;
+                }</style
+              ><a href="/team" class="css-1ibmtnu">Meet the Team</a>
+            </div>
+          </div>
+        </div>
+        <style data-emotion="css 1wy5mp4">
+          .css-1wy5mp4 {
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-bottom: 72px;
+          }
+        </style>
+        <main class="css-1wy5mp4">
+          <style data-emotion="css 1ewxb5s">
+            .css-1ewxb5s {
+              background-color: #113877;
+              box-sizing: border-box;
+              color: #fff;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              padding: 45px 50px;
+              width: 100%;
+            }
+            @media (min-width: 1270px) {
+              .css-1ewxb5s {
+                background-image: url('/images/about-hero.png');
+                background-repeat: no-repeat;
+                -webkit-background-size: 589px;
+                background-size: 589px;
+                height: 400px;
+                padding-left: 630px;
+              }
+            }
+            @media (min-width: 2165px) {
+              .css-1ewxb5s {
+                padding-left: 50px;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+              }
+            }
+            @media (min-width: 2880px) {
+              .css-1ewxb5s {
+                padding-left: 50px;
+              }
+            }
+          </style>
+          <article class="css-1ewxb5s">
+            <style data-emotion="css 1nquzay">
+              .css-1nquzay {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                max-width: 1550px;
+                width: 100%;
+              }
+              .css-1nquzay > * {
+                margin: 0;
+              }
+              .css-1nquzay > *:not(h1) {
+                margin-top: 20px;
+              }
+            </style>
+            <section class="css-1nquzay">
+              <style data-emotion="css oyuk0g">
+                .css-oyuk0g {
+                  font-size: 30px;
+                  font-weight: normal;
+                  position: relative;
+                }
+                @media (min-width: 1345px) {
+                  .css-oyuk0g {
+                    font-size: 34px;
+                  }
+                }
+              </style>
+              <h1 class="css-oyuk0g">
+                <style data-emotion="css qs5qsa">
+                  .css-qs5qsa {
+                    left: -42px;
+                    position: absolute;
+                    height: 35;
+                    width: 31;
+                  }</style
+                ><svg width="31" height="35" viewBox="0 0 31 35" class="css-qs5qsa">
+                  <g fill="none" fill-rule="evenodd">
+                    <g fill="#D93738">
+                      <g>
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="M15.5 0l-2.708 5.278c-.307.574-.857.52-1.408.2l-1.96-1.06 1.46 8.107c.308 1.481-.678 1.481-1.164.841L6.3 9.363l-.556 2.033c-.064.267-.345.547-.768.48l-4.325-.95 1.136 4.318c.243.96.433 1.358-.245 1.612L0 17.613l7.445 6.323c.295.239.444.669.34 1.058l-.653 2.236c2.564-.31 4.863-.586 7.426-.894.228-.003.605.2.604.474l-.34 8.19h1.247l-.196-8.173c-.002-.274.34-.494.568-.491l7.426.894-.651-2.236c-.105-.39.044-.82.338-1.058L31 17.613l-1.542-.757c-.678-.254-.489-.652-.245-1.612l1.136-4.318-4.325.95c-.423.067-.704-.213-.768-.48L24.7 9.363l-3.42 4.003c-.487.64-1.472.64-1.165-.84l1.461-8.109-1.96 1.062c-.55.32-1.1.373-1.408-.2L15.5 0z"
+                                transform="translate(-590 -115) translate(-31 -9) translate(0 73) translate(621 47) translate(0 4)"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g></svg
+                >Canadian VirusSeq Data Portal
+              </h1>
+              <style data-emotion="css 1en29hi">
+                .css-1en29hi {
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: 16px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 24px;
+                  letter-spacing: normal;
+                  font-weight: normal;
+                }
+              </style>
+              <p class="css-1en29hi">
+                The goal of the CanCOGeN VirusSeq project is to sequence up to 150,000 viral samples
+                from Canadians testing positive for COVID-19. The VirusSeq Data Portal is an
+                open-source and open-access data portal for all Canadian SARS-CoV-2 sequences and
+                associated non-personal contextual data. It harmonizes, validates and automates
+                submission to international databases.
+              </p>
+              <style data-emotion="css zjik7">
+                .css-zjik7 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              </style>
+              <div class="css-zjik7">
+                <style data-emotion="css 4xjrn6">
+                  .css-4xjrn6 {
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 18px;
+                    letter-spacing: normal;
+                    background-color: #aeafb3;
+                    border-color: #aeafb3;
+                    line-height: 20px;
+                    margin-right: 15px;
+                    padding: 8px 20px;
+                    width: -webkit-fit-content;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    pointer-events: none;
+                  }</style
+                ><style data-emotion="css 1wkupfx">
+                  .css-1wkupfx {
+                    line-height: 24px;
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    font-style: inherit;
+                    font-stretch: inherit;
+                    line-height: inherit;
+                    letter-spacing: inherit;
+                    color: #28519d;
+                    cursor: pointer;
+                    color: #fff;
+                    background-color: #60b3e0;
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 16px;
+                    letter-spacing: normal;
+                    line-height: 24px;
+                    border-radius: 5px;
+                    border: 1px solid #60b3e0;
+                    padding: 6px 15px;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 18px;
+                    letter-spacing: normal;
+                    background-color: #aeafb3;
+                    border-color: #aeafb3;
+                    line-height: 20px;
+                    margin-right: 15px;
+                    padding: 8px 20px;
+                    width: -webkit-fit-content;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    pointer-events: none;
+                  }
+                  .css-1wkupfx:hover {
+                    color: #6885ba;
+                  }
+                  .css-1wkupfx:hover {
+                    color: #fff;
+                    background-color: #151c3d;
+                  }</style
+                ><a href="/explorer" class="css-1wkupfx eue3zyj0">Explore the Data</a
+                ><style data-emotion="css 1rm7te4">
+                  .css-1rm7te4 {
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 18px;
+                    letter-spacing: normal;
+                    background-color: #33aabb;
+                    border-color: #33aabb;
+                    line-height: 20px;
+                    padding: 8px 20px;
+                    width: -webkit-fit-content;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                  }
+                  .css-1rm7te4:hover {
+                    color: #fff;
+                    background-color: #1c8292;
+                  }</style
+                ><style data-emotion="css 1grk4iy">
+                  .css-1grk4iy {
+                    line-height: 24px;
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    font-style: inherit;
+                    font-stretch: inherit;
+                    line-height: inherit;
+                    letter-spacing: inherit;
+                    color: #28519d;
+                    cursor: pointer;
+                    color: #fff;
+                    background-color: #60b3e0;
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 16px;
+                    letter-spacing: normal;
+                    line-height: 24px;
+                    border-radius: 5px;
+                    border: 1px solid #60b3e0;
+                    padding: 6px 15px;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    font-family: Source Sans Pro, sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 18px;
+                    letter-spacing: normal;
+                    background-color: #33aabb;
+                    border-color: #33aabb;
+                    line-height: 20px;
+                    padding: 8px 20px;
+                    width: -webkit-fit-content;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                  }
+                  .css-1grk4iy:hover {
+                    color: #6885ba;
+                  }
+                  .css-1grk4iy:hover {
+                    color: #fff;
+                    background-color: #151c3d;
+                  }
+                  .css-1grk4iy:hover {
+                    color: #fff;
+                    background-color: #1c8292;
+                  }</style
+                ><a href="/team" class="css-1grk4iy eue3zyj0">Meet the Team</a>
+              </div>
+            </section>
+          </article>
+          <style data-emotion="css dbpf4n">
+            .css-dbpf4n {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-flex-wrap: wrap;
+              -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              margin-top: 30px;
+              max-width: 1680px;
+              width: 100%;
+            }
+          </style>
+          <article class="css-dbpf4n">
+            <style data-emotion="css 1tqjd0m">
+              .css-1tqjd0m {
+                margin: 0 50px;
+              }
+              .css-1tqjd0m > * {
+                margin: 25px 0;
+              }
+              @media (min-width: 900px) {
+                .css-1tqjd0m {
+                  max-width: calc(35% - 75px);
+                  margin-right: 25px;
+                }
+              }
+              @media (min-width: 960px) {
+                .css-1tqjd0m {
+                  max-width: calc(40% - 75px);
+                }
+              }
+            </style>
+            <section class="css-1tqjd0m">
+              <style data-emotion="css pzfv2c">
+                .css-pzfv2c {
+                  color: #28519d;
+                  font-size: 26px;
+                  font-weight: normal;
+                  position: relative;
+                }
+              </style>
+              <h2 class="css-pzfv2c">Impact on Canadians</h2>
+              <p>
+                Genomic-based tracking and analysis of the evolving traits of the SARS-CoV-2 virus
+                across Canada provides critical information for:
+              </p>
+              <ul>
+                <li>Public health and policy decisions</li>
+                <li>Testing and tracing strategies</li>
+                <li>Virus detection and surveillance methods</li>
+                <li>Vaccine development and effectiveness</li>
+                <li>Drug discovery and effectiveness of treatment</li>
+                <li>Understanding susceptibility, disease severity and clinical outcomes</li>
+              </ul>
+              <style data-emotion="css p5omhx">
+                .css-p5omhx {
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: 16px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 18px;
+                  letter-spacing: normal;
+                  background-color: #113877;
+                  border-color: #113877;
+                  line-height: 20px;
+                  padding: 8px 20px;
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                }</style
+              ><style data-emotion="css pqea52">
+                .css-pqea52 {
+                  line-height: 24px;
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: inherit;
+                  font-weight: inherit;
+                  font-style: inherit;
+                  font-stretch: inherit;
+                  line-height: inherit;
+                  letter-spacing: inherit;
+                  color: #28519d;
+                  cursor: pointer;
+                  color: #fff;
+                  background-color: #60b3e0;
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 16px;
+                  letter-spacing: normal;
+                  line-height: 24px;
+                  border-radius: 5px;
+                  border: 1px solid #60b3e0;
+                  padding: 6px 15px;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  cursor: pointer;
+                  position: relative;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: 16px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 18px;
+                  letter-spacing: normal;
+                  background-color: #113877;
+                  border-color: #113877;
+                  line-height: 20px;
+                  padding: 8px 20px;
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                }
+                .css-pqea52:hover {
+                  color: #6885ba;
+                }
+                .css-pqea52:hover {
+                  color: #fff;
+                  background-color: #151c3d;
+                }</style
+              ><a
+                href="https://www.genomecanada.ca/en/cancogen"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="css-pqea52 eue3zyj0"
+                >Learn more about CanCOGeN</a
+              >
+            </section>
+            <style data-emotion="css hofuch">
+              .css-hofuch {
+                margin: 0 50px;
+              }
+              .css-hofuch > * {
+                margin: 25px 0;
+              }
+              @media (min-width: 900px) {
+                .css-hofuch {
+                  max-width: calc(65% - 75px);
+                  margin-left: 25px;
+                }
+              }
+              @media (min-width: 960px) {
+                .css-hofuch {
+                  max-width: calc(60% - 75px);
+                }
+              }
+            </style>
+            <section class="css-hofuch">
+              <style data-emotion="css 2tpj7g">
+                .css-2tpj7g {
+                  color: #28519d;
+                  font-size: 26px;
+                  font-weight: normal;
+                  position: relative;
+                }
+              </style>
+              <h2 class="css-2tpj7g">Why Sequence this Virus?</h2>
+              <style data-emotion="css 1omsha7">
+                .css-1omsha7 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-flex-wrap: wrap;
+                  -webkit-flex-wrap: wrap;
+                  -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+                  max-width: 744px;
+                }
+                .css-1omsha7 figcaption {
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: 12px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 16px;
+                  letter-spacing: normal;
+                  -webkit-flex-basis: calc(33% - 20px);
+                  -ms-flex-preferred-size: calc(33% - 20px);
+                  flex-basis: calc(33% - 20px);
+                  padding: 10px;
+                  text-align: center;
+                }
+              </style>
+              <figure class="css-1omsha7">
+                <img
+                  src="images/about-why_sequence.png"
+                  alt="image representing the three steps of DNA sequencing"
+                  width="100%"
+                  style="max-height: 200px"
+                />
+                <figcaption>
+                  Identify and track transmission trends at the regional, provincial, national and
+                  international scales.
+                </figcaption>
+                <figcaption>Aid detection of new clusters of cases/outbreaks.</figcaption>
+                <figcaption>Discover evolving viral characteristics that might impact.</figcaption>
+              </figure>
+            </section>
+          </article>
+          <style data-emotion="css 1238p3r">
+            .css-1238p3r {
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              background-color: #f2f3f5;
+              border: 1px solid #dfdfe1;
+              border-radius: 5px;
+              box-sizing: border-box;
+              color: #151c3d;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              margin: 50px;
+              padding: 30px;
+              text-align: center;
+              width: calc(100% - 100px);
+            }
+          </style>
+          <article class="css-1238p3r">
+            <img src="/images/covid-cloud.png" alt="logo for Covid Cloud" width="180" /><style
+              data-emotion="css 8dciv2"
+            >
+              .css-8dciv2 {
+                margin: 20px 0;
+                max-width: 900px;
+              }
+            </style>
+            <p class="css-8dciv2">
+              Genome Canada has partnered with<!-- -->
+              <style data-emotion="css 1i0q9vp">
+                .css-1i0q9vp {
+                  line-height: 24px;
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: inherit;
+                  font-weight: inherit;
+                  font-style: inherit;
+                  font-stretch: inherit;
+                  line-height: inherit;
+                  letter-spacing: inherit;
+                  color: #28519d;
+                  cursor: pointer;
+                }
+                .css-1i0q9vp:hover {
+                  color: #6885ba;
+                }</style
+              ><a
+                href="https://www.dnastack.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="css-1i0q9vp eue3zyj1"
+                >DNAstack</a
+              >
+              <!-- -->to integrate COVID Cloud with the Canadian VirusSeq Data Portal. COVID Cloud
+              is a cloud-based platform that helps researchers find, visualize, and analyze genomics
+              and other datasets related to COVID-19.
+            </p>
+            <style data-emotion="css 3uf1ap">
+              .css-3uf1ap {
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                color: #28519d;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                font-weight: bold;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+              }</style
+            ><a
+              href="https://virusseq.covidcloud.ca/"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="css-3uf1ap"
+              >Explore VirusSeq Data on COVID Cloud<style data-emotion="css 1ybj6l3">
+                .css-1ybj6l3 {
+                  margin-left: 3px;
+                  -webkit-transform: rotate(-90deg);
+                  -moz-transform: rotate(-90deg);
+                  -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+                }</style
+              ><svg width="10" height="11" viewBox="0 0 12 12" class="css-1ybj6l3">
+                <path
+                  fill="#28519d"
+                  fill-rule="evenodd"
+                  d="M9.952 3.342c.468-.456 1.228-.456 1.697 0 .234.228.351.526.351.825 0 .298-.117.597-.351.825l-4.8 4.666c-.469.456-1.23.456-1.697 0l-4.8-4.666c-.47-.456-.47-1.194 0-1.65.468-.456 1.228-.456 1.696 0L6 7.184l3.952-3.842z"
+                ></path></svg
+            ></a>
+          </article>
+        </main>
+        <style data-emotion="css 1ojn5qq">
+          .css-1ojn5qq {
+            height: 72px;
+            background-color: #fff;
+            border-top: 1px solid #dfdfe1;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+            z-index: 10;
+            overflow: hidden;
+            position: fixed;
             bottom: 0px;
             left: 0px;
             right: 0px;
           }
-
-          .code {
-            background: #eee;
-            margin: 0 2px;
-            padding: 0 3px;
-          }
-        </style><div></div><style data-emotion="css 1ad42f1">.css-1ad42f1{display:grid;grid-template-rows:64px 1fr 72px;height:100%;font-family:Source Sans Pro,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit;font-stretch:inherit;line-height:inherit;letter-spacing:inherit;color:#282a35;}</style><div class="css-1ad42f1"><style data-emotion="css 1rim0ko">.css-1rim0ko{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;height:64px;background:#28519d url(/images/navbar-bg.png) no-repeat;-webkit-background-size:281px;background-size:281px;box-shadow:0 1px 6px 0 rgba(0, 0, 0, 0.1),0 1px 5px 0 rgba(0, 0, 0, 0.08);position:-webkit-sticky;position:sticky;top:0;left:0;z-index:1;width:100%;}</style><div class="css-1rim0ko"><style data-emotion="css dovx9g">.css-dovx9g{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:40px;cursor:pointer;}</style><div class="css-dovx9g"><style data-emotion="css e725g0">.css-e725g0{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoration:none;text-decoration:none;}</style><a href="/" class="css-e725g0"><img src="/images/navbar-logo.png" alt="logos for CanCOGeN and VirusSeq" width="296"/></a></div><style data-emotion="css ga3b11">.css-ga3b11{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;width:100%;}</style><div class="css-ga3b11"><style data-emotion="css ak6t2g">.css-ak6t2g{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%;width:100%;}</style><div class="css-ak6t2g"><style data-emotion="css cxg2ws">.css-cxg2ws{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-bottom:5px solid transparent;box-sizing:border-box;color:#fff;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:0;-ms-flex:0;flex:0;font-weight:bold;height:100%;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:0 2rem;-webkit-text-decoration:none;text-decoration:none;white-space:nowrap;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;border-bottom-color:#60b3e0;color:#afd9ef;}.css-cxg2ws svg path{fill:#fff;}.css-cxg2ws:hover{border-bottom-color:#60b3e0;color:#afd9ef;}.css-cxg2ws:hover svg path{fill:#afd9ef;}.css-cxg2ws svg path{fill:#afd9ef;}</style><a href="/" class="css-cxg2ws">About VirusSeq Data Portal</a><style data-emotion="css 1r2jrdn">.css-1r2jrdn{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-bottom:5px solid transparent;box-sizing:border-box;color:#fff;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:0;-ms-flex:0;flex:0;font-weight:bold;height:100%;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:0 2rem;-webkit-text-decoration:none;text-decoration:none;white-space:nowrap;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;pointer-events:none;color:#aeafb3;}.css-1r2jrdn svg path{fill:#fff;}.css-1r2jrdn:hover{border-bottom-color:#60b3e0;color:#afd9ef;}.css-1r2jrdn:hover svg path{fill:#afd9ef;}</style><a href="/explorer" class="css-1r2jrdn">Explore VirusSeq Data</a><style data-emotion="css 1ibmtnu">.css-1ibmtnu{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-bottom:5px solid transparent;box-sizing:border-box;color:#fff;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:0;-ms-flex:0;flex:0;font-weight:bold;height:100%;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:0 2rem;-webkit-text-decoration:none;text-decoration:none;white-space:nowrap;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}.css-1ibmtnu svg path{fill:#fff;}.css-1ibmtnu:hover{border-bottom-color:#60b3e0;color:#afd9ef;}.css-1ibmtnu:hover svg path{fill:#afd9ef;}</style><a href="/team" class="css-1ibmtnu">Meet the Team</a></div></div></div><style data-emotion="css 1wy5mp4">.css-1wy5mp4{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding-bottom:72px;}</style><main class="css-1wy5mp4"><style data-emotion="css 1ewxb5s">.css-1ewxb5s{background-color:#113877;box-sizing:border-box;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:45px 50px;width:100%;}@media (min-width: 1270px){.css-1ewxb5s{background-image:url('/images/about-hero.png');background-repeat:no-repeat;-webkit-background-size:589px;background-size:589px;height:400px;padding-left:630px;}}@media (min-width: 2165px){.css-1ewxb5s{padding-left:50px;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}}@media (min-width: 2880px){.css-1ewxb5s{padding-left:50px;}}</style><article class="css-1ewxb5s"><style data-emotion="css 1nquzay">.css-1nquzay{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;max-width:1550px;width:100%;}.css-1nquzay >*{margin:0;}.css-1nquzay >*:not(h1){margin-top:20px;}</style><section class="css-1nquzay"><style data-emotion="css oyuk0g">.css-oyuk0g{font-size:30px;font-weight:normal;position:relative;}@media (min-width: 1345px){.css-oyuk0g{font-size:34px;}}</style><h1 class="css-oyuk0g"><style data-emotion="css qs5qsa">.css-qs5qsa{left:-42px;position:absolute;height:35;width:31;}</style><svg width="31" height="35" viewBox="0 0 31 35" class="css-qs5qsa"><g fill="none" fill-rule="evenodd"><g fill="#D93738"><g><g><g><g><path d="M15.5 0l-2.708 5.278c-.307.574-.857.52-1.408.2l-1.96-1.06 1.46 8.107c.308 1.481-.678 1.481-1.164.841L6.3 9.363l-.556 2.033c-.064.267-.345.547-.768.48l-4.325-.95 1.136 4.318c.243.96.433 1.358-.245 1.612L0 17.613l7.445 6.323c.295.239.444.669.34 1.058l-.653 2.236c2.564-.31 4.863-.586 7.426-.894.228-.003.605.2.604.474l-.34 8.19h1.247l-.196-8.173c-.002-.274.34-.494.568-.491l7.426.894-.651-2.236c-.105-.39.044-.82.338-1.058L31 17.613l-1.542-.757c-.678-.254-.489-.652-.245-1.612l1.136-4.318-4.325.95c-.423.067-.704-.213-.768-.48L24.7 9.363l-3.42 4.003c-.487.64-1.472.64-1.165-.84l1.461-8.109-1.96 1.062c-.55.32-1.1.373-1.408-.2L15.5 0z" transform="translate(-590 -115) translate(-31 -9) translate(0 73) translate(621 47) translate(0 4)"></path></g></g></g></g></g></g></svg>Canadian VirusSeq Data Portal</h1><style data-emotion="css 1en29hi">.css-1en29hi{font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:24px;letter-spacing:normal;font-weight:normal;}</style><p class="css-1en29hi">The goal of the CanCOGeN VirusSeq project is to sequence up to 150,000 viral samples from Canadians testing positive for COVID-19. The VirusSeq Data Portal is an open-source and open-access data portal for all Canadian SARS-CoV-2 sequences and associated non-personal contextual data. It harmonizes, validates and automates submission to international databases.</p><style data-emotion="css zjik7">.css-zjik7{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}</style><div class="css-zjik7"><style data-emotion="css 4xjrn6">.css-4xjrn6{font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:18px;letter-spacing:normal;background-color:#aeafb3;border-color:#aeafb3;line-height:20px;margin-right:15px;padding:8px 20px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;pointer-events:none;}</style><style data-emotion="css 1wkupfx">.css-1wkupfx{line-height:24px;font-family:Source Sans Pro,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit;font-stretch:inherit;line-height:inherit;letter-spacing:inherit;color:#28519d;cursor:pointer;color:#fff;background-color:#60b3e0;font-family:Source Sans Pro,sans-serif;font-size:14px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:16px;letter-spacing:normal;line-height:24px;border-radius:5px;border:1px solid #60b3e0;padding:6px 15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;position:relative;-webkit-text-decoration:none;text-decoration:none;font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:18px;letter-spacing:normal;background-color:#aeafb3;border-color:#aeafb3;line-height:20px;margin-right:15px;padding:8px 20px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;pointer-events:none;}.css-1wkupfx:hover{color:#6885ba;}.css-1wkupfx:hover{color:#fff;background-color:#151c3d;}</style><a href="/explorer" class="css-1wkupfx eue3zyj0">Explore the Data</a><style data-emotion="css 1rm7te4">.css-1rm7te4{font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:18px;letter-spacing:normal;background-color:#33aabb;border-color:#33aabb;line-height:20px;padding:8px 20px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}.css-1rm7te4:hover{color:#fff;background-color:#1c8292;}</style><style data-emotion="css 1grk4iy">.css-1grk4iy{line-height:24px;font-family:Source Sans Pro,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit;font-stretch:inherit;line-height:inherit;letter-spacing:inherit;color:#28519d;cursor:pointer;color:#fff;background-color:#60b3e0;font-family:Source Sans Pro,sans-serif;font-size:14px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:16px;letter-spacing:normal;line-height:24px;border-radius:5px;border:1px solid #60b3e0;padding:6px 15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;position:relative;-webkit-text-decoration:none;text-decoration:none;font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:18px;letter-spacing:normal;background-color:#33aabb;border-color:#33aabb;line-height:20px;padding:8px 20px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}.css-1grk4iy:hover{color:#6885ba;}.css-1grk4iy:hover{color:#fff;background-color:#151c3d;}.css-1grk4iy:hover{color:#fff;background-color:#1c8292;}</style><a href="/team" class="css-1grk4iy eue3zyj0">Meet the Team</a></div></section></article><style data-emotion="css dbpf4n">.css-dbpf4n{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:30px;max-width:1680px;width:100%;}</style><article class="css-dbpf4n"><style data-emotion="css 1tqjd0m">.css-1tqjd0m{margin:0 50px;}.css-1tqjd0m >*{margin:25px 0;}@media (min-width: 900px){.css-1tqjd0m{max-width:calc(35% - 75px);margin-right:25px;}}@media (min-width: 960px){.css-1tqjd0m{max-width:calc(40% - 75px);}}</style><section class="css-1tqjd0m"><style data-emotion="css pzfv2c">.css-pzfv2c{color:#28519d;font-size:26px;font-weight:normal;position:relative;}</style><h2 class="css-pzfv2c">Impact on Canadians</h2><p>Genomic-based tracking and analysis of the evolving traits of the SARS-CoV-2 virus across Canada provides critical information for:</p><ul><li>Public health and policy decisions</li><li>Testing and tracing strategies</li><li>Virus detection and surveillance methods</li><li>Vaccine development and effectiveness</li><li>Drug discovery and effectiveness of treatment</li><li>Understanding susceptibility, disease severity and clinical outcomes</li></ul><style data-emotion="css p5omhx">.css-p5omhx{font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:18px;letter-spacing:normal;background-color:#113877;border-color:#113877;line-height:20px;padding:8px 20px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}</style><style data-emotion="css pqea52">.css-pqea52{line-height:24px;font-family:Source Sans Pro,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit;font-stretch:inherit;line-height:inherit;letter-spacing:inherit;color:#28519d;cursor:pointer;color:#fff;background-color:#60b3e0;font-family:Source Sans Pro,sans-serif;font-size:14px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:16px;letter-spacing:normal;line-height:24px;border-radius:5px;border:1px solid #60b3e0;padding:6px 15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;position:relative;-webkit-text-decoration:none;text-decoration:none;font-family:Source Sans Pro,sans-serif;font-size:16px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:18px;letter-spacing:normal;background-color:#113877;border-color:#113877;line-height:20px;padding:8px 20px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}.css-pqea52:hover{color:#6885ba;}.css-pqea52:hover{color:#fff;background-color:#151c3d;}</style><a href="https://www.genomecanada.ca/en/cancogen" rel="noopener noreferrer" target="_blank" class="css-pqea52 eue3zyj0">Learn more about CanCOGeN</a></section><style data-emotion="css hofuch">.css-hofuch{margin:0 50px;}.css-hofuch >*{margin:25px 0;}@media (min-width: 900px){.css-hofuch{max-width:calc(65% - 75px);margin-left:25px;}}@media (min-width: 960px){.css-hofuch{max-width:calc(60% - 75px);}}</style><section class="css-hofuch"><style data-emotion="css 2tpj7g">.css-2tpj7g{color:#28519d;font-size:26px;font-weight:normal;position:relative;}</style><h2 class="css-2tpj7g">Why Sequence this Virus?</h2><style data-emotion="css 1omsha7">.css-1omsha7{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:744px;}.css-1omsha7 figcaption{font-family:Source Sans Pro,sans-serif;font-size:12px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:16px;letter-spacing:normal;-webkit-flex-basis:calc(33% - 20px);-ms-flex-preferred-size:calc(33% - 20px);flex-basis:calc(33% - 20px);padding:10px;text-align:center;}</style><figure class="css-1omsha7"><img src="images/about-why_sequence.png" alt="image representing the three steps of DNA sequencing" width="100%" style="max-height:200px"/><figcaption>Identify and track transmission trends at the regional, provincial, national and international scales.</figcaption><figcaption>Aid detection of new clusters of cases/outbreaks.</figcaption><figcaption>Discover evolving viral characteristics that might impact.</figcaption></figure></section></article><style data-emotion="css 1238p3r">.css-1238p3r{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#f2f3f5;border:1px solid #dfdfe1;border-radius:5px;box-sizing:border-box;color:#151c3d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:50px;padding:30px;text-align:center;width:calc(100% - 100px);}</style><article class="css-1238p3r"><img src="/images/covid-cloud.png" alt="logo for Covid Cloud" width="180"/><style data-emotion="css 8dciv2">.css-8dciv2{margin:20px 0;max-width:900px;}</style><p class="css-8dciv2">Genome Canada has partnered with<!-- --> <style data-emotion="css 1i0q9vp">.css-1i0q9vp{line-height:24px;font-family:Source Sans Pro,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit;font-stretch:inherit;line-height:inherit;letter-spacing:inherit;color:#28519d;cursor:pointer;}.css-1i0q9vp:hover{color:#6885ba;}</style><a href="https://www.dnastack.com" rel="noopener noreferrer" target="_blank" class="css-1i0q9vp eue3zyj1">DNAstack</a> <!-- -->to integrate COVID Cloud with the Canadian VirusSeq Data Portal. COVID Cloud is a cloud-based platform that helps researchers find, visualize, and analyze genomics and other datasets related to COVID-19.</p><style data-emotion="css 3uf1ap">.css-3uf1ap{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#28519d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-weight:bold;-webkit-text-decoration:none;text-decoration:none;}</style><a href="https://virusseq.covidcloud.ca/" rel="noopener noreferrer" target="_blank" class="css-3uf1ap">Explore VirusSeq Data on COVID Cloud<style data-emotion="css 1ybj6l3">.css-1ybj6l3{margin-left:3px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);}</style><svg width="10" height="11" viewBox="0 0 12 12" class="css-1ybj6l3"><path fill="#28519d" fill-rule="evenodd" d="M9.952 3.342c.468-.456 1.228-.456 1.697 0 .234.228.351.526.351.825 0 .298-.117.597-.351.825l-4.8 4.666c-.469.456-1.23.456-1.697 0l-4.8-4.666c-.47-.456-.47-1.194 0-1.65.468-.456 1.228-.456 1.696 0L6 7.184l3.952-3.842z"></path></svg></a></article></main><style data-emotion="css 1ojn5qq">.css-1ojn5qq{height:72px;background-color:#fff;border-top:1px solid #dfdfe1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 20px;box-shadow:0 1px 6px 0 rgba(0, 0, 0, 0.1),0 1px 5px 0 rgba(0, 0, 0, 0.08);z-index:10;overflow:hidden;position:fixed;bottom:0px;left:0px;right:0px;}</style><div class="css-1ojn5qq"><a href="https://www.genomecanada.ca/" rel="noopener noreferrer" target="_blank"><style data-emotion="css cc9lb1">.css-cc9lb1{height:94;width:85;}</style><svg width="85" height="94" viewBox="0 0 94 56" class="css-cc9lb1"><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><g><g><g><path fill="#033C82" d="M18.555 53.552c0 .581.022 1.163.033 1.755l-.067.1c-.894.291-1.699.56-3.029.56-.793 0-1.341-.112-1.721-.213-.503-.145-1.442-.447-2.191-1.408-.581-.738-.894-1.733-.894-2.929 0-.85.19-1.878.648-2.671 1.017-1.7 2.616-2.102 4.08-2.102 1.33 0 2.19.358 2.727.582l.079.055c-.101.76-.123.962-.19 1.755l-.101.034c-.604-.391-1.185-.771-2.157-.771-1.61 0-2.705 1.095-2.705 3.096 0 .95.357 2.828 2.347 2.828.358 0 .615-.067.961-.134.023-1.152.011-1.465-.1-2.705l.067-.079 2.18-.033.066.078c-.01.648-.022 1.286-.022 1.911v.291h-.011zM32.225 55.765c-.972 0-1.185.011-1.99.034l-.067-.067c0-.414.012-.839.012-1.252 0-.458-.012-2.113-.034-2.515-.033-.436-.1-1.151-.771-1.151-.391 0-.682.2-.94.38.012 2.168.023 2.638.102 4.504l-.068.067c-.972 0-1.162 0-2.045.034l-.078-.067c.01-.772.022-1.554.022-2.325 0-1.967-.067-2.739-.168-3.79l.079-.089c.916-.123 1.129-.156 2.068-.346l.122.09-.022.67c.559-.324 1.207-.716 1.956-.716.436 0 1.14.1 1.52.727.302.492.313 1.05.336 2.213v.939c.022 1.185.022 1.52.09 2.593l-.124.067zM39.68 52.557c0-.47 0-2.425-1.71-3.096-.536-.212-1.173-.235-1.486-.235-2.135 0-3.331 1.13-3.331 3.354 0 .77.123 1.565.57 2.213.313.47.917 1.129 2.671 1.129 2.594 0 3.287-1.543 3.287-3.365m-2.113-.01c0 .994-.134 2.09-1.151 2.09-.324 0-.537-.146-.682-.28-.212-.201-.436-.615-.436-1.789 0-.346 0-1.128.246-1.542.179-.324.503-.548.894-.548.347 0 .626.18.783.38.279.347.346 1.04.346 1.688M50.076 55.765c-.86 0-1.13 0-2.046.034l-.078-.067c.011-.37.022-2.169.034-2.582 0-.235.01-.459.01-.693 0-1.04-.111-1.7-.804-1.7-.369 0-.637.168-.838.302l.01 1.219v.447c.012 1.464.023 1.8.101 2.95l-.067.068c-.838 0-1.095 0-2.034.045l-.067-.09c.022-.983.034-1.252.034-3.007 0-1.04-.023-1.9-.783-1.9-.302 0-.581.157-.838.336.011 2.1.022 2.66.112 4.526l-.079.068c-1.017 0-1.285.01-2.068.033l-.055-.067c0-.693.01-1.397.01-2.079 0-2.392-.078-3.063-.167-4.024l.078-.09c.85-.122 1.13-.167 2.08-.346l.111.112v.682c.559-.392 1.084-.75 1.9-.75.984 0 1.286.515 1.453.783.492-.335 1.163-.782 2.169-.782.19 0 1.04 0 1.52.693.358.514.347 1.263.335 2.068v.905c0 1.364.012 1.677.067 2.806l-.1.1zM56.738 53.988c-.47.246-1.017.525-1.912.525-.737 0-1.24-.234-1.531-.67-.179-.257-.224-.492-.268-.738l3.945-.067.079-.09c-.011-.592-.023-1.196-.19-1.8-.425-1.43-1.364-1.72-1.789-1.81-.302-.09-.592-.112-.872-.112-1.922 0-3.185 1.241-3.185 3.342 0 .57.1 1.163.29 1.588.705 1.632 2.37 1.777 3.253 1.777 1.017 0 1.453-.179 2.101-.436l.079-.1.09-1.364-.09-.045zm-3.7-2.168c.033-.38.123-.883.581-1.174.145-.1.324-.134.492-.134.402 0 .648.201.782.425.168.268.19.558.19.838l-2.045.045zM64.562 55.318c-.145.09-.29.168-.436.246-.47.235-1.196.402-1.978.402-2.739 0-4.147-2.034-4.147-4.415 0-2.235 1.397-4.482 4.214-4.482 1.24 0 1.81.29 2.302.537l.056.1c-.056.257-.078.313-.1.637l-.09.056c-.357-.246-.972-.66-2.18-.66-2.436 0-3.375 2.057-3.375 3.823 0 2.102 1.375 3.734 3.443 3.734.447 0 .905-.09 1.352-.268.47-.19.67-.358.95-.593l.1.056c-.044.302-.055.38-.055.715l-.056.112zM65.702 50.49l.1.044c.548-.28.929-.458 1.733-.458.861 0 1.13.413 1.196.559.09.19.1.47.112.793v.157l-1.073.156c-.682.112-1.554.257-2.101.738-.414.369-.637.905-.637 1.464 0 1.207.86 1.968 2.079 1.968.626 0 1.184-.202 1.732-.604l.011.425.09.067.648-.034.078-.09c-.078-1.128-.1-1.463-.078-3.095v-.75c0-1.184 0-1.452-.358-1.832-.28-.313-.76-.57-1.632-.57-.804 0-1.319.212-1.81.402l-.056.09-.034.57zm3.141 1.71v2.425c-.391.324-.805.648-1.598.648-1.006 0-1.442-.737-1.442-1.363 0-.637.48-.995.581-1.062.347-.257.738-.347 1.81-.559l.65-.09zM71.872 55.776l-.726.023-.056-.067c.011-.66.022-.973.022-1.487 0-.626-.011-1.274-.022-1.9-.011-1.375-.023-1.677-.112-2.627l.067-.09.749-.122.067.067-.045.626c.515-.313 1.219-.771 2.214-.771.234 0 .95 0 1.464.57.436.47.436 1.061.447 1.99l.022 1.229c.011 1.274.023 1.464.079 2.481l-.079.078-.737.023-.056-.09c.01-.57.022-.883.022-1.363s-.022-2.18-.045-2.817c-.01-.28-.033-.715-.29-1.017-.213-.246-.604-.414-1.04-.414-.916 0-1.643.548-1.978.816.01 2.046.022 2.515.111 4.795l-.078.067zM77.696 50.49l.1.044c.548-.28.928-.458 1.733-.458.85 0 1.129.413 1.196.559.09.19.1.47.112.793v.157l-1.073.156c-.682.112-1.554.257-2.102.738-.413.369-.637.905-.637 1.464 0 1.207.86 1.968 2.08 1.968.625 0 1.184-.202 1.732-.604l.01.425.09.067.649-.034.067-.09c-.067-1.128-.1-1.463-.067-3.095v-.75c0-1.184 0-1.452-.358-1.832-.28-.313-.76-.57-1.632-.57-.805 0-1.319.212-1.81.402l-.068.09-.022.57zm3.14 1.71v2.425c-.39.324-.804.648-1.598.648-1.006 0-1.442-.737-1.442-1.363 0-.637.47-.995.57-1.062.347-.257.738-.347 1.811-.559l.66-.09zM87.275 55.732l.078.067c.29-.023.358-.023.649-.023l.067-.055c-.1-1.945-.1-4.136-.1-6.204 0-1.084.01-2.18.021-3.275l-.078-.067c-.38.09-.436.1-.749.145l-.09.078c.09.727.09.928.113 3.152-.235-.01-.392-.01-.548-.01-.894 0-2.169.066-3.018.882-.525.492-.939 1.33-.939 2.37 0 1.643.995 3.085 2.75 3.085 1.04 0 1.576-.47 1.833-.693v.548h.011zm-.011-1.275c-.168.18-.693.738-1.688.738-1.352 0-2.09-1.095-2.09-2.47 0-.682.19-1.788 1.341-2.314.559-.246 1.185-.28 1.733-.28.301 0 .436.012.648.023 0 1.084.034 2.817.045 3.89v.413h.01zM89.69 50.49l.1.044c.548-.28.928-.458 1.733-.458.86 0 1.128.413 1.196.559.089.19.1.47.111.793v.157l-1.073.156c-.682.112-1.553.257-2.101.738-.414.369-.637.905-.637 1.464 0 1.207.85 1.968 2.079 1.968.626 0 1.185-.202 1.732-.604l.012.425.089.067.648-.034.078-.09c-.078-1.128-.1-1.463-.078-3.095v-.75c0-1.184 0-1.452-.357-1.832-.28-.313-.76-.57-1.621-.57-.805 0-1.32.212-1.811.402l-.056.09-.045.57zm3.14 1.71v2.425c-.39.324-.804.648-1.598.648-1.006 0-1.442-.737-1.442-1.363 0-.637.48-.995.581-1.062.347-.257.738-.347 1.811-.559l.648-.09zM25.44 52.949c-.01-.593-.01-1.286-.179-1.7-.145-.357-.815-1.285-2.414-.704-.022.011-.045.011-.067.034-.022.033.011.056.011.056.414.179.66.514.66 1.129l-2.046.044s-.078-.436.201-1.006c.224-.47.794-1.117 1.934-1.34.458-.068.548-.023.593-.034.01 0 .055-.023.01-.056 0 0-.044-.034-.122-.045-.201-.067-.649-.168-1.442-.168-1.923 0-3.186 1.297-3.186 3.398 0 .57.1 1.163.29 1.588.705 1.631 2.37 1.777 3.254 1.777 1.017 0 1.453-.18 2.1-.436l.08-.1.089-1.364-.09-.034c-.47.246-1.017.525-1.911.525-.727 0-1.23-.234-1.532-.67-.19-.257-.223-.492-.268-.738l3.946-.067.09-.09zM3.13 25.384c1.05-.368 2.459-.715 4.806-1.084l.86-.145c.09-.011.135-.056.146-.1.034-.101-.022-.157-.19-.202-.201-.045-.525-.1-.794-.168-2.56-.592-2.928-1.34-2.95-2.101-.012-.436.19-.883.737-1.252.716-.492 1.923-.76 2.627-.905 4.918-1.029 12.34-1.185 12.34-7.769 0-2.626-1.643-4.303-3.085-5.197-1.062-.66-2.034-.861-2.034-.861v2.582s1.542 1.04 1.542 3.03c0 2.235-.905 4.671-6.058 5.733-3.241.671-5.566 1.13-7.22 1.822-1.655.693-2.683 1.968-2.817 3.152-.112 1.051.156 2.493 2.09 3.465M19.315 27.262c-1.006.47-2.247.872-4.225 1.263-.503.1-.85.146-1.062.19-.168.034-.212.112-.179.19.022.067.078.09.224.123.234.056.614.123 1.073.246 1.129.347 1.866.816 2.269 1.275.413.458.615 1.017.615 1.687 0 .772-.246 1.453-.738 2.023-.67.727-1.789 1.33-3.353 1.789-.772.235-1.822.436-3.04.548v2.056c3.107-.167 6.158-.916 7.868-2.023 1.956-1.252 2.94-2.928 2.94-5.03 0-1.24-.347-2.314-1.05-3.197-.481-.547-.928-.871-1.342-1.14" transform="translate(-25 -1011) translate(0 1003) translate(25 8)"></path><path fill="#EB022B" d="M9.568 35.858c-.324-.112-.995-.302-1.688-.581-1.833-.75-3.543-1.822-3.498-3.633.044-1.721 1.632-2.794 4.504-3.353 3.152-.615 7.78-1.073 10.116-2.258 2.303-1.029 2.079-3.655.693-4.896-.134-.123-.224-.212-.29-.179-.101.045-.079.123-.034.246.123.358.29 1.028-.034 1.598-1.129 1.968-7.455 1.956-12.955 3.007-4.538.872-6.427 3.007-6.326 5.354.112 2.437 2.459 4.27 5.734 4.773 1.308.201 3.074.29 3.711.201.168-.022.212-.078.212-.167 0-.045-.033-.067-.145-.112M5.812 16.744c1.051-.313 3.834-.894 3.834-.894.067-.011.134-.022.146-.1.01-.057-.012-.112-.09-.135-.09-.022-1.05-.223-1.978-.827-1.241-.805-2.213-1.978-2.146-3.7.078-2.291 1.99-3.733 4.18-4.404 1.99-.603 3.812-.872 4.94-1.598 2.158-1.364 1.934-3.644.727-4.784-.168-.157-.28-.268-.369-.224-.09.045-.078.146-.033.257.112.28.357.962.033 1.588-.592 1.15-3.878 1.564-6.349 2.09-3.297.693-5.063 1.755-6.37 3.342-.783.95-1.264 2.336-1.264 3.733 0 3.152 2.437 4.795 4.74 5.656" transform="translate(-25 -1011) translate(0 1003) translate(25 8)"></path></g></g></g></g></g></svg></a><style data-emotion="css 17l309o">.css-17l309o{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:60%;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-17l309o a,.css-17l309o span{font-family:Source Sans Pro,sans-serif;font-size:14px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:16px;letter-spacing:normal;font-weight:normal;}</style><section class="css-17l309o"><style data-emotion="css j3qt0s">.css-j3qt0s{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0;padding:0;}.css-j3qt0s li{display:inline;padding:0 20px;position:relative;}.css-j3qt0s li:not(:first-of-type)::before{color:#60b3e0;content:'•';font-size:10px;left:-3px;position:absolute;top:5px;}</style><ul class="css-j3qt0s"><li><a href="https://www.genomecanada.ca/en/cancogen" rel="noopener noreferrer" target="_blank" class="css-1i0q9vp eue3zyj1">About CanCOGeN</a></li><li><a href="/policies" class="css-1i0q9vp eue3zyj1">Policies</a></li><li><a href="mailto:info@virusseq-dataportal.ca" rel="noopener noreferrer" target="_blank" class="css-1i0q9vp eue3zyj1">Contact Us</a></li></ul><span>©<!-- --> 2021 Canadian VirusSeq Data Portal</span></section><section class="css-zjik7"><style data-emotion="css 1vcob1d">.css-1vcob1d{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><span class="css-1vcob1d"><style data-emotion="css 16xfv5v">.css-16xfv5v{color:#151c3d;font-family:Source Sans Pro,sans-serif;font-size:14px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:16px;letter-spacing:normal;font-weight:normal;padding-right:10px;}</style><span class="css-16xfv5v">Powered by:</span><style data-emotion="css 1gammwy">.css-1gammwy{margin-top:5px;}</style><a href="https://www.overture.bio/" rel="noopener noreferrer" target="_blank" class="css-1gammwy"><style data-emotion="css 1v482yh">.css-1v482yh{height:18;width:100;}</style><svg width="100" height="18" viewBox="0 0 100 18" class="css-1v482yh"><defs><path id="qmyfq6ng8a" d="M0.145 0.088L10.34 0.088 10.34 10.914 0.145 10.914z"></path><path id="iw928zy0oc" d="M0 0.034L17.985 0.034 17.985 17.835 0 17.835z"></path></defs><g fill="none" fill-rule="evenodd"><path fill="#29ABE2" d="M22.458 8.957c0 2.359 1.897 4.447 4.389 4.447 2.583 0 4.594-1.931 4.594-4.447 0-2.56-1.988-4.491-4.594-4.491-2.514 0-4.389 2.088-4.389 4.491m10.012-.022c0 3.077-2.446 5.413-5.555 5.413-3.04 0-5.485-2.448-5.485-5.39 0-2.988 2.423-5.436 5.485-5.436 3.11 0 5.555 2.336 5.555 5.413M38.52 12.304L42.269 3.747 43.32 3.747 38.497 14.684 33.651 3.747 34.703 3.747zM53.668 8.081c-.252-1.909-1.852-3.615-4.023-3.615-2.149 0-3.932 1.662-4.115 3.615h8.138zm-8.138.944c-.068 2.628 1.783 4.38 4.23 4.38 1.645 0 2.97-.966 3.725-2.359l.868.494c-.96 1.797-2.651 2.808-4.731 2.808-3.131 0-5.12-2.493-5.12-5.435 0-2.898 2.034-5.39 5.12-5.39 3.2 0 5.097 2.515 5.074 5.502H45.53zM58.794 5.26h.046c.412-.944 1.166-1.573 2.286-1.573.411 0 .754.09 1.12.248l-.549.898c-.251-.135-.457-.202-.731-.202-2.309 0-2.172 2.83-2.172 4.357v5.3h-1.028V3.912h1.028V5.26zM67.469 14.288L66.441 14.288 66.441 4.855 65.275 4.855 65.275 3.912 66.441 3.912 66.441.207 67.469.207 67.469 3.912 69.321 3.912 69.321 4.855 67.469 4.855zM80.146 3.747v6.221c0 1.056.023 2.111-.64 2.987-.732.943-1.966 1.393-3.154 1.393-1.189 0-2.423-.45-3.155-1.393-.663-.876-.64-1.931-.64-2.987V3.747h1.029v5.862c0 1.999.228 3.795 2.766 3.795 2.537 0 2.765-1.796 2.765-3.795V3.747h1.029zM84.514 5.26h.045c.412-.944 1.166-1.573 2.286-1.573.412 0 .754.09 1.12.248l-.548.898c-.252-.135-.457-.202-.732-.202-2.308 0-2.171 2.83-2.171 4.357v5.3h-1.029V3.912h1.029V5.26z"></path><g transform="translate(89.58 3.434)"><mask id="p9y2toyonb" fill="#fff"><use xlink:href="#qmyfq6ng8a"></use></mask><path fill="#29ABE2" d="M9.311 4.647C9.06 2.738 7.46 1.032 5.288 1.032c-2.149 0-3.931 1.662-4.114 3.615H9.31zm-8.137.944c-.069 2.628 1.783 4.38 4.229 4.38 1.645 0 2.97-.966 3.725-2.359l.869.494c-.96 1.797-2.652 2.808-4.732 2.808-3.131 0-5.12-2.493-5.12-5.435 0-2.898 2.034-5.39 5.12-5.39 3.2 0 5.098 2.515 5.075 5.502H1.174z" mask="url(#p9y2toyonb)"></path></g><path fill="#D9DE3A" d="M7.711 4.08c.938.25 1.765.701 2.448 1.294.244.198.475.412.687.646l-.002.002c.068-.011.137-.02.206-.028.034-.005.07-.007.104-.011.153-.017.307-.03.462-.036.069-.003.138-.001.206-.002.119 0 .238 0 .357.007.116.006.231.019.347.031.069.008.138.014.207.024.242.035.484.079.725.143 1.163.308 2.184.933 2.967 1.798.027-.083.06-.162.083-.247.414-1.508.206-3.084-.587-4.438C15.13 1.909 13.847.94 12.312.533 11.797.396 11.273.33 10.753.33c-1.028 0-2.042.264-2.957.78-1.15.65-2.022 1.638-2.521 2.822.791-.109 1.617-.067 2.436.15"></path><path fill="#B74A89" d="M4.569 15.53c.837.222 1.682.256 2.487.128-.178-.224-.347-.457-.494-.708-.814-1.392-1.029-3.012-.603-4.562.033-.122.073-.241.114-.36-1.232-1.454-1.755-3.453-1.217-5.415.045-.16.099-.316.155-.471-1.337.251-2.553.95-3.434 1.97-.051.062-.106.12-.155.183l-.06.082c-.086.112-.166.231-.244.35-.231.36-.427.748-.58 1.165-.556 1.528-.435 3.133.21 4.497.036.074.076.146.114.218.04.075.079.15.122.224.761 1.282 2.015 2.282 3.585 2.699"></path><path fill="#AD404E" d="M5.017 4.656c-.514 1.875-.03 3.784 1.124 5.192.182-.482.422-.934.717-1.348.074-.109.158-.208.239-.31l.085-.106c.766-.924 1.779-1.596 2.909-1.935-.556-.664-1.266-1.216-2.082-1.584-.66-.3-1.385-.48-2.125-.524-.232.01-.461.036-.688.072-.068.177-.128.358-.179.543"></path><path fill="#67C2E8" d="M17.023 9.037c-.157-.268-.339-.517-.532-.753-.774 2.036-2.591 3.453-4.679 3.813l-.012.003c-.164.406-.366.787-.607 1.139l-.043.062c-.07.098-.142.194-.218.286-.06.077-.124.15-.189.223-.04.045-.078.09-.119.133-.867.926-2.013 1.564-3.267 1.822.737.845 1.703 1.464 2.807 1.787.071.02.142.043.213.06.1.025.201.045.302.065.197.036.394.07.59.089.092.008.183.02.275.025.046.002.092 0 .138.002.223.007.444-.006.665-.023.125-.01.249-.025.372-.044.084-.011.168-.027.25-.043.48-.09.943-.234 1.383-.432.065-.03.13-.061.193-.093.467-.23.906-.516 1.3-.86.038-.033.073-.07.11-.104.096-.088.19-.178.281-.272.117-.124.23-.253.335-.387l.013-.015c.47-.6.82-1.291 1.026-2.045.414-1.508.206-3.084-.587-4.438M10.831 6.032c.073-.012.145-.029.219-.038-.069.009-.138.017-.206.028l-.013.01z"></path><path fill="#5DB9AE" d="M14.682 10.15c.455-.343.864-.747 1.209-1.203.152-.202.288-.415.412-.636.024-.06.04-.124.062-.184-.77-.878-1.787-1.511-2.95-1.82-.516-.136-1.04-.204-1.56-.204-.305 0-.607.031-.907.077.378.481.681 1.015.898 1.585.03.076.059.152.085.23l.02.06c.301.907.382 1.89.204 2.869-.018.107-.039.213-.063.32l-.03.12-.001.006c.471-.104.933-.26 1.375-.466.44-.204.858-.457 1.246-.754"></path><path fill="#5391C8" d="M10.761 12.19c-.525 0-1.06-.068-1.591-.209-.993-.263-1.861-.755-2.566-1.4-.116.392-.208.793-.247 1.203-.053.56-.03 1.127.06 1.69.088.562.252 1.114.514 1.626.092.18.201.352.314.522 1.267-.243 2.427-.883 3.292-1.823.445-.483.81-1.047 1.074-1.673-.28.04-.563.064-.85.064"></path><path fill="#67C2E8" d="M11.95 8.055c.295.908.374 1.89.205 2.87.178-.98.097-1.963-.205-2.87"></path><g transform="translate(0 .131)"><mask id="vfvioedjtd" fill="#fff"><use xlink:href="#iw928zy0oc"></use></mask><path fill="#FFF" d="M16.571 15.404c-.105.134-.218.262-.335.387-.09.094-.185.183-.281.271-.037.035-.072.071-.11.105-.309.272-.646.515-1.013.723-.093.053-.192.09-.287.137-.064.032-.128.063-.193.092-.446.202-.908.346-1.382.433-.083.016-.167.031-.25.043-.125.018-.248.034-.373.043-.22.018-.442.03-.665.024-.046-.002-.092 0-.139-.003-.09-.004-.182-.016-.273-.025-.197-.018-.394-.052-.591-.088-.101-.02-.201-.04-.302-.066-.07-.017-.142-.04-.213-.06-1.104-.323-2.07-.941-2.807-1.787 1.254-.257 2.4-.895 3.267-1.822.041-.042.08-.088.12-.132.064-.073.127-.147.188-.223.076-.093.148-.188.218-.286l.043-.062c.24-.352.443-.734.607-1.14l.012-.002c2.088-.36 3.905-1.777 4.679-3.814.193.237.375.486.532.754.793 1.354 1.001 2.93.587 4.438-.206.753-.556 1.444-1.026 2.045l-.013.015zM.862 12.476c-.038-.072-.078-.144-.113-.218-.589-1.214-.76-2.63-.377-4.027.164-.597.422-1.142.746-1.635.079-.12.158-.238.244-.35l.06-.082c.05-.063.104-.121.155-.182.881-1.022 2.097-1.72 3.434-1.971-.056.154-.11.31-.154.47-.539 1.963-.016 3.962 1.216 5.416-.04.118-.08.238-.114.36-.426 1.55-.211 3.17.603 4.562.147.25.316.484.494.708-.805.127-1.65.093-2.487-.129-1.57-.416-2.824-1.416-3.585-2.698-.043-.074-.082-.149-.122-.224zm6.383 3.014c-.113-.169-.222-.34-.314-.521-.262-.513-.426-1.064-.513-1.626-.091-.563-.114-1.13-.06-1.69.038-.41.13-.811.246-1.204.705.646 1.573 1.138 2.566 1.401.531.141 1.065.208 1.591.208.287 0 .57-.024.85-.063-.264.626-.629 1.19-1.074 1.673-.865.94-2.025 1.58-3.292 1.822zm4.817-4.257l.03-.12c.024-.107.045-.214.063-.32.17-.98.09-1.962-.205-2.87l-.019-.06c-.026-.077-.055-.153-.085-.23-.217-.569-.52-1.103-.898-1.584.3-.046.602-.077.907-.077.52 0 1.044.068 1.56.204 1.163.309 2.18.942 2.95 1.82-.022.06-.038.124-.062.183-.124.221-.26.435-.412.636-.345.457-.754.86-1.209 1.203-.388.298-.807.55-1.246.755-.442.206-.904.362-1.375.466l.001-.006zm-4.053-6.8c.816.368 1.526.921 2.082 1.584-1.13.34-2.143 1.012-2.909 1.936-.03.034-.057.07-.085.105-.081.103-.165.202-.24.31-.294.414-.534.867-.716 1.349C4.986 8.309 4.503 6.4 5.017 4.525c.051-.185.111-.366.179-.543.227-.036.456-.063.688-.072.74.044 1.465.223 2.125.524zM7.796.98C8.71.46 9.726.198 10.753.198c.52 0 1.044.067 1.56.204 1.534.406 2.816 1.376 3.608 2.73.793 1.354 1.001 2.93.587 4.438-.023.084-.056.164-.083.246-.783-.864-1.803-1.49-2.967-1.798-.24-.063-.483-.107-.725-.142-.07-.01-.138-.016-.207-.024-.116-.013-.231-.026-.347-.031-.12-.007-.238-.007-.357-.007-.069 0-.137-.001-.206.001-.155.006-.309.02-.462.037l-.104.01c-.074.01-.146.027-.219.04l.013-.011.002-.002c-.212-.234-.444-.448-.687-.646-.683-.593-1.51-1.045-2.448-1.293-.819-.217-1.645-.26-2.436-.15.5-1.184 1.371-2.172 2.52-2.821zm9.372 7.846c-.18-.307-.388-.59-.613-.857.04-.117.081-.235.114-.356.425-1.55.211-3.17-.603-4.562C15.25 1.66 13.933.662 12.356.244 10.778-.174 9.129.036 7.713.837c-1.214.686-2.13 1.737-2.636 3C2.806 4.226.851 5.86.212 8.188c-.879 3.2 1.056 6.505 4.313 7.368.532.14 1.066.208 1.591.208.358 0 .71-.033 1.056-.093.8.945 1.868 1.628 3.1 1.954.53.14 1.068.21 1.603.21 1.056 0 2.1-.272 3.04-.803 1.416-.8 2.43-2.095 2.856-3.645.426-1.55.211-3.17-.603-4.562z" mask="url(#vfvioedjtd)"></path></g><path stroke-linecap="round" stroke-linejoin="round" d="M11.543 17.79c.047.003.093.002.14.003M15.845 16.298c.038-.033.073-.07.11-.104M16.236 15.922c.117-.125.23-.253.335-.387M.862 12.607c-.038-.072-.078-.144-.113-.217M1.362 6.377l.06-.082"></path></g></svg></a></span><style data-emotion="css h78qp4">.css-h78qp4{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#28519d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-weight:bold;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin-left:20px;-webkit-text-decoration:none;text-decoration:none;}</style><a href="https://github.com/cancogen-virus-seq" rel="noopener noreferrer" target="_blank" class="css-h78qp4"><style data-emotion="css yuxif0">.css-yuxif0{width:20;height:20;}</style><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-yuxif0"><g fill="none" fill-rule="evenodd"><g fill="#04518C"><g><g><g><g><g><g><g><path d="M7.504 19.486v-1.743c-2.77.618-3.36-1.374-3.36-1.374-.173-.612-.556-1.143-1.08-1.5-.902-.633.07-.622.07-.622.646.094 1.21.485 1.529 1.055.534 1.03 1.798 1.43 2.826.897l.075-.042c.046-.517.27-1.003.632-1.374-2.215-.255-4.543-1.137-4.543-5.061-.018-1.014.35-1.997 1.026-2.75-.3-.884-.263-1.848.103-2.707 0 0 .837-.276 2.739 1.05 1.633-.462 3.363-.462 4.997 0 1.901-1.326 2.739-1.05 2.739-1.05.368.859.402 1.824.097 2.707.677.753 1.043 1.736 1.026 2.75 0 3.935-2.333 4.8-4.554 5.055.483.509.728 1.2.676 1.9v2.81c0 .335.178.59.686.492 4.115-1.455 6.853-5.37 6.811-9.743C20.065 4.649 15.6.066 10.023 0L9.973 0C4.396.071-.068 4.658.001 10.247c-.041 4.376 2.702 8.293 6.823 9.743.497.07.68-.244.68-.504" transform="translate(-142 -555) translate(120 -25) translate(10) translate(0 273) translate(0 164) translate(0 132) translate(12 11)"></path></g></g></g></g></g></g></g></g></g></svg><style data-emotion="css 1qkltea">.css-1qkltea{margin-left:5px;}</style><span class="css-1qkltea">VirusSeq Github</span></a></section></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"ctx":{"pathname":"/","query":{},"asPath":"/"},"pageProps":null},"page":"/","query":{},"buildId":"yiC55JSoYZG18RggVID2F","runtimeConfig":{"NEXT_PUBLIC_EGO_API_ROOT":"https://ego/api","NEXT_PUBLIC_EGO_CLIENT_ID":"portal","NEXT_PUBLIC_KEYCLOAK":"https://keycloak/","NEXT_PUBLIC_ARRANGER_PROJECT_ID":"cancogen_may06","NEXT_PUBLIC_ARRANGER_GRAPHQL_FIELD":"file","NEXT_PUBLIC_ARRANGER_INDEX":"file_centric","NEXT_PUBLIC_ARRANGER_API":"https://arranger/","NEXT_PUBLIC_ARRANGER_MANIFEST_COLUMNS":"repositories.code, analysis.analysis_id, object_id, file.index_file.file_type, file.index_file.name, file.index_file.size, file.index_file.md5sum, file.index_file.object_id, donors.donor_id, donors.specimens.samples.sample_id, study_id","NEXT_PUBLIC_BASE_PATH":"/","NEXT_PUBLIC_MUSE_API":"https://muse/","NEXT_PUBLIC_SSO_PROVIDERS":"GOOGLE,ORCID,GITHUB,LINKEDIN","NEXT_PUBLIC_SYSTEM_ALERTS":"[{\"dismissable\":true,\"id\":\"20210601-mantainence\",\"level\":\"warning\", \"title\": \"Scheduled Maintenance\", \"message\": \"Data exploration, download and upload are currently unavailable due to site maintenance.  Service should return shortly after the maintenance window completes on June 9.\"}]"},"nextExport":true,"isFallback":false,"gip":true,"appGip":true,"head":[["meta",{"name":"viewport","content":"width=device-width"}],["meta",{"charSet":"utf-8"}],["link",{"rel":"shortcut icon","href":"/images/favicon.ico"}],["title",{"children":"VirusSeq Portal"}]]}</script><script nomodule="" src="/_next/static/chunks/polyfills-2a32dcd0a819c274d356.js"></script><script src="/_next/static/chunks/main-8f280b5ee29b225cdeb6.js" async=""></script><script src="/_next/static/chunks/webpack-7ec3da4c8aacd407fbc9.js" async=""></script><script src="/_next/static/chunks/framework.64bf4370dab6af33a2f8.js" async=""></script><script src="/_next/static/chunks/29107295.3e37e48dae55c9a386d4.js" async=""></script><script src="/_next/static/chunks/commons.a9095aca9f8fd2a1db97.js" async=""></script><script src="/_next/static/chunks/31d8d39b71590cb95a84f2c35ee19d66d1a35555.4919b08791280cf2cebd.js" async=""></script><script src="/_next/static/chunks/pages/_app-929220933f39d354dd15.js" async=""></script><script src="/_next/static/chunks/07e8549b6658ce238ffb45a8e89093641127c03d.fc95dfdee470ef47f6f1.js" async=""></script><script src="/_next/static/chunks/415513b774a8d5fc9caa75de2ad616bf899449a5.2ec348f26453ac5c25c7.js" async=""></script><script src="/_next/static/chunks/484c840239a025432effd6ecc373d498fa764368.a81d5a0e4f6383e42ea8.js" async=""></script><script src="/_next/static/chunks/pages/index-3d34bf55913fbb5b902a.js" async=""></script><script src="/_next/static/yiC55JSoYZG18RggVID2F/_buildManifest.js" async=""></script><script src="/_next/static/yiC55JSoYZG18RggVID2F/_ssgManifest.js" async=""></script></body></html>
+        </style>
+        <div class="css-1ojn5qq">
+          <a href="https://www.genomecanada.ca/" rel="noopener noreferrer" target="_blank"
+            ><style data-emotion="css cc9lb1">
+              .css-cc9lb1 {
+                height: 94;
+                width: 85;
+              }</style
+            ><svg width="85" height="94" viewBox="0 0 94 56" class="css-cc9lb1">
+              <g fill="none" fill-rule="evenodd">
+                <g fill-rule="nonzero">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          fill="#033C82"
+                          d="M18.555 53.552c0 .581.022 1.163.033 1.755l-.067.1c-.894.291-1.699.56-3.029.56-.793 0-1.341-.112-1.721-.213-.503-.145-1.442-.447-2.191-1.408-.581-.738-.894-1.733-.894-2.929 0-.85.19-1.878.648-2.671 1.017-1.7 2.616-2.102 4.08-2.102 1.33 0 2.19.358 2.727.582l.079.055c-.101.76-.123.962-.19 1.755l-.101.034c-.604-.391-1.185-.771-2.157-.771-1.61 0-2.705 1.095-2.705 3.096 0 .95.357 2.828 2.347 2.828.358 0 .615-.067.961-.134.023-1.152.011-1.465-.1-2.705l.067-.079 2.18-.033.066.078c-.01.648-.022 1.286-.022 1.911v.291h-.011zM32.225 55.765c-.972 0-1.185.011-1.99.034l-.067-.067c0-.414.012-.839.012-1.252 0-.458-.012-2.113-.034-2.515-.033-.436-.1-1.151-.771-1.151-.391 0-.682.2-.94.38.012 2.168.023 2.638.102 4.504l-.068.067c-.972 0-1.162 0-2.045.034l-.078-.067c.01-.772.022-1.554.022-2.325 0-1.967-.067-2.739-.168-3.79l.079-.089c.916-.123 1.129-.156 2.068-.346l.122.09-.022.67c.559-.324 1.207-.716 1.956-.716.436 0 1.14.1 1.52.727.302.492.313 1.05.336 2.213v.939c.022 1.185.022 1.52.09 2.593l-.124.067zM39.68 52.557c0-.47 0-2.425-1.71-3.096-.536-.212-1.173-.235-1.486-.235-2.135 0-3.331 1.13-3.331 3.354 0 .77.123 1.565.57 2.213.313.47.917 1.129 2.671 1.129 2.594 0 3.287-1.543 3.287-3.365m-2.113-.01c0 .994-.134 2.09-1.151 2.09-.324 0-.537-.146-.682-.28-.212-.201-.436-.615-.436-1.789 0-.346 0-1.128.246-1.542.179-.324.503-.548.894-.548.347 0 .626.18.783.38.279.347.346 1.04.346 1.688M50.076 55.765c-.86 0-1.13 0-2.046.034l-.078-.067c.011-.37.022-2.169.034-2.582 0-.235.01-.459.01-.693 0-1.04-.111-1.7-.804-1.7-.369 0-.637.168-.838.302l.01 1.219v.447c.012 1.464.023 1.8.101 2.95l-.067.068c-.838 0-1.095 0-2.034.045l-.067-.09c.022-.983.034-1.252.034-3.007 0-1.04-.023-1.9-.783-1.9-.302 0-.581.157-.838.336.011 2.1.022 2.66.112 4.526l-.079.068c-1.017 0-1.285.01-2.068.033l-.055-.067c0-.693.01-1.397.01-2.079 0-2.392-.078-3.063-.167-4.024l.078-.09c.85-.122 1.13-.167 2.08-.346l.111.112v.682c.559-.392 1.084-.75 1.9-.75.984 0 1.286.515 1.453.783.492-.335 1.163-.782 2.169-.782.19 0 1.04 0 1.52.693.358.514.347 1.263.335 2.068v.905c0 1.364.012 1.677.067 2.806l-.1.1zM56.738 53.988c-.47.246-1.017.525-1.912.525-.737 0-1.24-.234-1.531-.67-.179-.257-.224-.492-.268-.738l3.945-.067.079-.09c-.011-.592-.023-1.196-.19-1.8-.425-1.43-1.364-1.72-1.789-1.81-.302-.09-.592-.112-.872-.112-1.922 0-3.185 1.241-3.185 3.342 0 .57.1 1.163.29 1.588.705 1.632 2.37 1.777 3.253 1.777 1.017 0 1.453-.179 2.101-.436l.079-.1.09-1.364-.09-.045zm-3.7-2.168c.033-.38.123-.883.581-1.174.145-.1.324-.134.492-.134.402 0 .648.201.782.425.168.268.19.558.19.838l-2.045.045zM64.562 55.318c-.145.09-.29.168-.436.246-.47.235-1.196.402-1.978.402-2.739 0-4.147-2.034-4.147-4.415 0-2.235 1.397-4.482 4.214-4.482 1.24 0 1.81.29 2.302.537l.056.1c-.056.257-.078.313-.1.637l-.09.056c-.357-.246-.972-.66-2.18-.66-2.436 0-3.375 2.057-3.375 3.823 0 2.102 1.375 3.734 3.443 3.734.447 0 .905-.09 1.352-.268.47-.19.67-.358.95-.593l.1.056c-.044.302-.055.38-.055.715l-.056.112zM65.702 50.49l.1.044c.548-.28.929-.458 1.733-.458.861 0 1.13.413 1.196.559.09.19.1.47.112.793v.157l-1.073.156c-.682.112-1.554.257-2.101.738-.414.369-.637.905-.637 1.464 0 1.207.86 1.968 2.079 1.968.626 0 1.184-.202 1.732-.604l.011.425.09.067.648-.034.078-.09c-.078-1.128-.1-1.463-.078-3.095v-.75c0-1.184 0-1.452-.358-1.832-.28-.313-.76-.57-1.632-.57-.804 0-1.319.212-1.81.402l-.056.09-.034.57zm3.141 1.71v2.425c-.391.324-.805.648-1.598.648-1.006 0-1.442-.737-1.442-1.363 0-.637.48-.995.581-1.062.347-.257.738-.347 1.81-.559l.65-.09zM71.872 55.776l-.726.023-.056-.067c.011-.66.022-.973.022-1.487 0-.626-.011-1.274-.022-1.9-.011-1.375-.023-1.677-.112-2.627l.067-.09.749-.122.067.067-.045.626c.515-.313 1.219-.771 2.214-.771.234 0 .95 0 1.464.57.436.47.436 1.061.447 1.99l.022 1.229c.011 1.274.023 1.464.079 2.481l-.079.078-.737.023-.056-.09c.01-.57.022-.883.022-1.363s-.022-2.18-.045-2.817c-.01-.28-.033-.715-.29-1.017-.213-.246-.604-.414-1.04-.414-.916 0-1.643.548-1.978.816.01 2.046.022 2.515.111 4.795l-.078.067zM77.696 50.49l.1.044c.548-.28.928-.458 1.733-.458.85 0 1.129.413 1.196.559.09.19.1.47.112.793v.157l-1.073.156c-.682.112-1.554.257-2.102.738-.413.369-.637.905-.637 1.464 0 1.207.86 1.968 2.08 1.968.625 0 1.184-.202 1.732-.604l.01.425.09.067.649-.034.067-.09c-.067-1.128-.1-1.463-.067-3.095v-.75c0-1.184 0-1.452-.358-1.832-.28-.313-.76-.57-1.632-.57-.805 0-1.319.212-1.81.402l-.068.09-.022.57zm3.14 1.71v2.425c-.39.324-.804.648-1.598.648-1.006 0-1.442-.737-1.442-1.363 0-.637.47-.995.57-1.062.347-.257.738-.347 1.811-.559l.66-.09zM87.275 55.732l.078.067c.29-.023.358-.023.649-.023l.067-.055c-.1-1.945-.1-4.136-.1-6.204 0-1.084.01-2.18.021-3.275l-.078-.067c-.38.09-.436.1-.749.145l-.09.078c.09.727.09.928.113 3.152-.235-.01-.392-.01-.548-.01-.894 0-2.169.066-3.018.882-.525.492-.939 1.33-.939 2.37 0 1.643.995 3.085 2.75 3.085 1.04 0 1.576-.47 1.833-.693v.548h.011zm-.011-1.275c-.168.18-.693.738-1.688.738-1.352 0-2.09-1.095-2.09-2.47 0-.682.19-1.788 1.341-2.314.559-.246 1.185-.28 1.733-.28.301 0 .436.012.648.023 0 1.084.034 2.817.045 3.89v.413h.01zM89.69 50.49l.1.044c.548-.28.928-.458 1.733-.458.86 0 1.128.413 1.196.559.089.19.1.47.111.793v.157l-1.073.156c-.682.112-1.553.257-2.101.738-.414.369-.637.905-.637 1.464 0 1.207.85 1.968 2.079 1.968.626 0 1.185-.202 1.732-.604l.012.425.089.067.648-.034.078-.09c-.078-1.128-.1-1.463-.078-3.095v-.75c0-1.184 0-1.452-.357-1.832-.28-.313-.76-.57-1.621-.57-.805 0-1.32.212-1.811.402l-.056.09-.045.57zm3.14 1.71v2.425c-.39.324-.804.648-1.598.648-1.006 0-1.442-.737-1.442-1.363 0-.637.48-.995.581-1.062.347-.257.738-.347 1.811-.559l.648-.09zM25.44 52.949c-.01-.593-.01-1.286-.179-1.7-.145-.357-.815-1.285-2.414-.704-.022.011-.045.011-.067.034-.022.033.011.056.011.056.414.179.66.514.66 1.129l-2.046.044s-.078-.436.201-1.006c.224-.47.794-1.117 1.934-1.34.458-.068.548-.023.593-.034.01 0 .055-.023.01-.056 0 0-.044-.034-.122-.045-.201-.067-.649-.168-1.442-.168-1.923 0-3.186 1.297-3.186 3.398 0 .57.1 1.163.29 1.588.705 1.631 2.37 1.777 3.254 1.777 1.017 0 1.453-.18 2.1-.436l.08-.1.089-1.364-.09-.034c-.47.246-1.017.525-1.911.525-.727 0-1.23-.234-1.532-.67-.19-.257-.223-.492-.268-.738l3.946-.067.09-.09zM3.13 25.384c1.05-.368 2.459-.715 4.806-1.084l.86-.145c.09-.011.135-.056.146-.1.034-.101-.022-.157-.19-.202-.201-.045-.525-.1-.794-.168-2.56-.592-2.928-1.34-2.95-2.101-.012-.436.19-.883.737-1.252.716-.492 1.923-.76 2.627-.905 4.918-1.029 12.34-1.185 12.34-7.769 0-2.626-1.643-4.303-3.085-5.197-1.062-.66-2.034-.861-2.034-.861v2.582s1.542 1.04 1.542 3.03c0 2.235-.905 4.671-6.058 5.733-3.241.671-5.566 1.13-7.22 1.822-1.655.693-2.683 1.968-2.817 3.152-.112 1.051.156 2.493 2.09 3.465M19.315 27.262c-1.006.47-2.247.872-4.225 1.263-.503.1-.85.146-1.062.19-.168.034-.212.112-.179.19.022.067.078.09.224.123.234.056.614.123 1.073.246 1.129.347 1.866.816 2.269 1.275.413.458.615 1.017.615 1.687 0 .772-.246 1.453-.738 2.023-.67.727-1.789 1.33-3.353 1.789-.772.235-1.822.436-3.04.548v2.056c3.107-.167 6.158-.916 7.868-2.023 1.956-1.252 2.94-2.928 2.94-5.03 0-1.24-.347-2.314-1.05-3.197-.481-.547-.928-.871-1.342-1.14"
+                          transform="translate(-25 -1011) translate(0 1003) translate(25 8)"
+                        ></path>
+                        <path
+                          fill="#EB022B"
+                          d="M9.568 35.858c-.324-.112-.995-.302-1.688-.581-1.833-.75-3.543-1.822-3.498-3.633.044-1.721 1.632-2.794 4.504-3.353 3.152-.615 7.78-1.073 10.116-2.258 2.303-1.029 2.079-3.655.693-4.896-.134-.123-.224-.212-.29-.179-.101.045-.079.123-.034.246.123.358.29 1.028-.034 1.598-1.129 1.968-7.455 1.956-12.955 3.007-4.538.872-6.427 3.007-6.326 5.354.112 2.437 2.459 4.27 5.734 4.773 1.308.201 3.074.29 3.711.201.168-.022.212-.078.212-.167 0-.045-.033-.067-.145-.112M5.812 16.744c1.051-.313 3.834-.894 3.834-.894.067-.011.134-.022.146-.1.01-.057-.012-.112-.09-.135-.09-.022-1.05-.223-1.978-.827-1.241-.805-2.213-1.978-2.146-3.7.078-2.291 1.99-3.733 4.18-4.404 1.99-.603 3.812-.872 4.94-1.598 2.158-1.364 1.934-3.644.727-4.784-.168-.157-.28-.268-.369-.224-.09.045-.078.146-.033.257.112.28.357.962.033 1.588-.592 1.15-3.878 1.564-6.349 2.09-3.297.693-5.063 1.755-6.37 3.342-.783.95-1.264 2.336-1.264 3.733 0 3.152 2.437 4.795 4.74 5.656"
+                          transform="translate(-25 -1011) translate(0 1003) translate(25 8)"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g></svg></a
+          ><style data-emotion="css 17l309o">
+            .css-17l309o {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              height: 60%;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+            }
+            .css-17l309o a,
+            .css-17l309o span {
+              font-family: Source Sans Pro, sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 16px;
+              letter-spacing: normal;
+              font-weight: normal;
+            }
+          </style>
+          <section class="css-17l309o">
+            <style data-emotion="css j3qt0s">
+              .css-j3qt0s {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                margin: 0;
+                padding: 0;
+              }
+              .css-j3qt0s li {
+                display: inline;
+                padding: 0 20px;
+                position: relative;
+              }
+              .css-j3qt0s li:not(:first-of-type)::before {
+                color: #60b3e0;
+                content: '•';
+                font-size: 10px;
+                left: -3px;
+                position: absolute;
+                top: 5px;
+              }
+            </style>
+            <ul class="css-j3qt0s">
+              <li>
+                <a
+                  href="https://www.genomecanada.ca/en/cancogen"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="css-1i0q9vp eue3zyj1"
+                  >About CanCOGeN</a
+                >
+              </li>
+              <li><a href="/policies" class="css-1i0q9vp eue3zyj1">Policies</a></li>
+              <li>
+                <a
+                  href="mailto:info@virusseq-dataportal.ca"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="css-1i0q9vp eue3zyj1"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <span
+              >©<!-- -->
+              2021 Canadian VirusSeq Data Portal</span
+            >
+          </section>
+          <section class="css-zjik7">
+            <style data-emotion="css 1vcob1d">
+              .css-1vcob1d {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+              }</style
+            ><span class="css-1vcob1d"
+              ><style data-emotion="css 16xfv5v">
+                .css-16xfv5v {
+                  color: #151c3d;
+                  font-family: Source Sans Pro, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 16px;
+                  letter-spacing: normal;
+                  font-weight: normal;
+                  padding-right: 10px;
+                }</style
+              ><span class="css-16xfv5v">Powered by:</span
+              ><style data-emotion="css 1gammwy">
+                .css-1gammwy {
+                  margin-top: 5px;
+                }</style
+              ><a
+                href="https://www.overture.bio/"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="css-1gammwy"
+                ><style data-emotion="css 1v482yh">
+                  .css-1v482yh {
+                    height: 18;
+                    width: 100;
+                  }</style
+                ><svg width="100" height="18" viewBox="0 0 100 18" class="css-1v482yh">
+                  <defs>
+                    <path
+                      id="qmyfq6ng8a"
+                      d="M0.145 0.088L10.34 0.088 10.34 10.914 0.145 10.914z"
+                    ></path>
+                    <path id="iw928zy0oc" d="M0 0.034L17.985 0.034 17.985 17.835 0 17.835z"></path>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#29ABE2"
+                      d="M22.458 8.957c0 2.359 1.897 4.447 4.389 4.447 2.583 0 4.594-1.931 4.594-4.447 0-2.56-1.988-4.491-4.594-4.491-2.514 0-4.389 2.088-4.389 4.491m10.012-.022c0 3.077-2.446 5.413-5.555 5.413-3.04 0-5.485-2.448-5.485-5.39 0-2.988 2.423-5.436 5.485-5.436 3.11 0 5.555 2.336 5.555 5.413M38.52 12.304L42.269 3.747 43.32 3.747 38.497 14.684 33.651 3.747 34.703 3.747zM53.668 8.081c-.252-1.909-1.852-3.615-4.023-3.615-2.149 0-3.932 1.662-4.115 3.615h8.138zm-8.138.944c-.068 2.628 1.783 4.38 4.23 4.38 1.645 0 2.97-.966 3.725-2.359l.868.494c-.96 1.797-2.651 2.808-4.731 2.808-3.131 0-5.12-2.493-5.12-5.435 0-2.898 2.034-5.39 5.12-5.39 3.2 0 5.097 2.515 5.074 5.502H45.53zM58.794 5.26h.046c.412-.944 1.166-1.573 2.286-1.573.411 0 .754.09 1.12.248l-.549.898c-.251-.135-.457-.202-.731-.202-2.309 0-2.172 2.83-2.172 4.357v5.3h-1.028V3.912h1.028V5.26zM67.469 14.288L66.441 14.288 66.441 4.855 65.275 4.855 65.275 3.912 66.441 3.912 66.441.207 67.469.207 67.469 3.912 69.321 3.912 69.321 4.855 67.469 4.855zM80.146 3.747v6.221c0 1.056.023 2.111-.64 2.987-.732.943-1.966 1.393-3.154 1.393-1.189 0-2.423-.45-3.155-1.393-.663-.876-.64-1.931-.64-2.987V3.747h1.029v5.862c0 1.999.228 3.795 2.766 3.795 2.537 0 2.765-1.796 2.765-3.795V3.747h1.029zM84.514 5.26h.045c.412-.944 1.166-1.573 2.286-1.573.412 0 .754.09 1.12.248l-.548.898c-.252-.135-.457-.202-.732-.202-2.308 0-2.171 2.83-2.171 4.357v5.3h-1.029V3.912h1.029V5.26z"
+                    ></path>
+                    <g transform="translate(89.58 3.434)">
+                      <mask id="p9y2toyonb" fill="#fff"><use xlink:href="#qmyfq6ng8a"></use></mask>
+                      <path
+                        fill="#29ABE2"
+                        d="M9.311 4.647C9.06 2.738 7.46 1.032 5.288 1.032c-2.149 0-3.931 1.662-4.114 3.615H9.31zm-8.137.944c-.069 2.628 1.783 4.38 4.229 4.38 1.645 0 2.97-.966 3.725-2.359l.869.494c-.96 1.797-2.652 2.808-4.732 2.808-3.131 0-5.12-2.493-5.12-5.435 0-2.898 2.034-5.39 5.12-5.39 3.2 0 5.098 2.515 5.075 5.502H1.174z"
+                        mask="url(#p9y2toyonb)"
+                      ></path>
+                    </g>
+                    <path
+                      fill="#D9DE3A"
+                      d="M7.711 4.08c.938.25 1.765.701 2.448 1.294.244.198.475.412.687.646l-.002.002c.068-.011.137-.02.206-.028.034-.005.07-.007.104-.011.153-.017.307-.03.462-.036.069-.003.138-.001.206-.002.119 0 .238 0 .357.007.116.006.231.019.347.031.069.008.138.014.207.024.242.035.484.079.725.143 1.163.308 2.184.933 2.967 1.798.027-.083.06-.162.083-.247.414-1.508.206-3.084-.587-4.438C15.13 1.909 13.847.94 12.312.533 11.797.396 11.273.33 10.753.33c-1.028 0-2.042.264-2.957.78-1.15.65-2.022 1.638-2.521 2.822.791-.109 1.617-.067 2.436.15"
+                    ></path>
+                    <path
+                      fill="#B74A89"
+                      d="M4.569 15.53c.837.222 1.682.256 2.487.128-.178-.224-.347-.457-.494-.708-.814-1.392-1.029-3.012-.603-4.562.033-.122.073-.241.114-.36-1.232-1.454-1.755-3.453-1.217-5.415.045-.16.099-.316.155-.471-1.337.251-2.553.95-3.434 1.97-.051.062-.106.12-.155.183l-.06.082c-.086.112-.166.231-.244.35-.231.36-.427.748-.58 1.165-.556 1.528-.435 3.133.21 4.497.036.074.076.146.114.218.04.075.079.15.122.224.761 1.282 2.015 2.282 3.585 2.699"
+                    ></path>
+                    <path
+                      fill="#AD404E"
+                      d="M5.017 4.656c-.514 1.875-.03 3.784 1.124 5.192.182-.482.422-.934.717-1.348.074-.109.158-.208.239-.31l.085-.106c.766-.924 1.779-1.596 2.909-1.935-.556-.664-1.266-1.216-2.082-1.584-.66-.3-1.385-.48-2.125-.524-.232.01-.461.036-.688.072-.068.177-.128.358-.179.543"
+                    ></path>
+                    <path
+                      fill="#67C2E8"
+                      d="M17.023 9.037c-.157-.268-.339-.517-.532-.753-.774 2.036-2.591 3.453-4.679 3.813l-.012.003c-.164.406-.366.787-.607 1.139l-.043.062c-.07.098-.142.194-.218.286-.06.077-.124.15-.189.223-.04.045-.078.09-.119.133-.867.926-2.013 1.564-3.267 1.822.737.845 1.703 1.464 2.807 1.787.071.02.142.043.213.06.1.025.201.045.302.065.197.036.394.07.59.089.092.008.183.02.275.025.046.002.092 0 .138.002.223.007.444-.006.665-.023.125-.01.249-.025.372-.044.084-.011.168-.027.25-.043.48-.09.943-.234 1.383-.432.065-.03.13-.061.193-.093.467-.23.906-.516 1.3-.86.038-.033.073-.07.11-.104.096-.088.19-.178.281-.272.117-.124.23-.253.335-.387l.013-.015c.47-.6.82-1.291 1.026-2.045.414-1.508.206-3.084-.587-4.438M10.831 6.032c.073-.012.145-.029.219-.038-.069.009-.138.017-.206.028l-.013.01z"
+                    ></path>
+                    <path
+                      fill="#5DB9AE"
+                      d="M14.682 10.15c.455-.343.864-.747 1.209-1.203.152-.202.288-.415.412-.636.024-.06.04-.124.062-.184-.77-.878-1.787-1.511-2.95-1.82-.516-.136-1.04-.204-1.56-.204-.305 0-.607.031-.907.077.378.481.681 1.015.898 1.585.03.076.059.152.085.23l.02.06c.301.907.382 1.89.204 2.869-.018.107-.039.213-.063.32l-.03.12-.001.006c.471-.104.933-.26 1.375-.466.44-.204.858-.457 1.246-.754"
+                    ></path>
+                    <path
+                      fill="#5391C8"
+                      d="M10.761 12.19c-.525 0-1.06-.068-1.591-.209-.993-.263-1.861-.755-2.566-1.4-.116.392-.208.793-.247 1.203-.053.56-.03 1.127.06 1.69.088.562.252 1.114.514 1.626.092.18.201.352.314.522 1.267-.243 2.427-.883 3.292-1.823.445-.483.81-1.047 1.074-1.673-.28.04-.563.064-.85.064"
+                    ></path>
+                    <path
+                      fill="#67C2E8"
+                      d="M11.95 8.055c.295.908.374 1.89.205 2.87.178-.98.097-1.963-.205-2.87"
+                    ></path>
+                    <g transform="translate(0 .131)">
+                      <mask id="vfvioedjtd" fill="#fff"><use xlink:href="#iw928zy0oc"></use></mask>
+                      <path
+                        fill="#FFF"
+                        d="M16.571 15.404c-.105.134-.218.262-.335.387-.09.094-.185.183-.281.271-.037.035-.072.071-.11.105-.309.272-.646.515-1.013.723-.093.053-.192.09-.287.137-.064.032-.128.063-.193.092-.446.202-.908.346-1.382.433-.083.016-.167.031-.25.043-.125.018-.248.034-.373.043-.22.018-.442.03-.665.024-.046-.002-.092 0-.139-.003-.09-.004-.182-.016-.273-.025-.197-.018-.394-.052-.591-.088-.101-.02-.201-.04-.302-.066-.07-.017-.142-.04-.213-.06-1.104-.323-2.07-.941-2.807-1.787 1.254-.257 2.4-.895 3.267-1.822.041-.042.08-.088.12-.132.064-.073.127-.147.188-.223.076-.093.148-.188.218-.286l.043-.062c.24-.352.443-.734.607-1.14l.012-.002c2.088-.36 3.905-1.777 4.679-3.814.193.237.375.486.532.754.793 1.354 1.001 2.93.587 4.438-.206.753-.556 1.444-1.026 2.045l-.013.015zM.862 12.476c-.038-.072-.078-.144-.113-.218-.589-1.214-.76-2.63-.377-4.027.164-.597.422-1.142.746-1.635.079-.12.158-.238.244-.35l.06-.082c.05-.063.104-.121.155-.182.881-1.022 2.097-1.72 3.434-1.971-.056.154-.11.31-.154.47-.539 1.963-.016 3.962 1.216 5.416-.04.118-.08.238-.114.36-.426 1.55-.211 3.17.603 4.562.147.25.316.484.494.708-.805.127-1.65.093-2.487-.129-1.57-.416-2.824-1.416-3.585-2.698-.043-.074-.082-.149-.122-.224zm6.383 3.014c-.113-.169-.222-.34-.314-.521-.262-.513-.426-1.064-.513-1.626-.091-.563-.114-1.13-.06-1.69.038-.41.13-.811.246-1.204.705.646 1.573 1.138 2.566 1.401.531.141 1.065.208 1.591.208.287 0 .57-.024.85-.063-.264.626-.629 1.19-1.074 1.673-.865.94-2.025 1.58-3.292 1.822zm4.817-4.257l.03-.12c.024-.107.045-.214.063-.32.17-.98.09-1.962-.205-2.87l-.019-.06c-.026-.077-.055-.153-.085-.23-.217-.569-.52-1.103-.898-1.584.3-.046.602-.077.907-.077.52 0 1.044.068 1.56.204 1.163.309 2.18.942 2.95 1.82-.022.06-.038.124-.062.183-.124.221-.26.435-.412.636-.345.457-.754.86-1.209 1.203-.388.298-.807.55-1.246.755-.442.206-.904.362-1.375.466l.001-.006zm-4.053-6.8c.816.368 1.526.921 2.082 1.584-1.13.34-2.143 1.012-2.909 1.936-.03.034-.057.07-.085.105-.081.103-.165.202-.24.31-.294.414-.534.867-.716 1.349C4.986 8.309 4.503 6.4 5.017 4.525c.051-.185.111-.366.179-.543.227-.036.456-.063.688-.072.74.044 1.465.223 2.125.524zM7.796.98C8.71.46 9.726.198 10.753.198c.52 0 1.044.067 1.56.204 1.534.406 2.816 1.376 3.608 2.73.793 1.354 1.001 2.93.587 4.438-.023.084-.056.164-.083.246-.783-.864-1.803-1.49-2.967-1.798-.24-.063-.483-.107-.725-.142-.07-.01-.138-.016-.207-.024-.116-.013-.231-.026-.347-.031-.12-.007-.238-.007-.357-.007-.069 0-.137-.001-.206.001-.155.006-.309.02-.462.037l-.104.01c-.074.01-.146.027-.219.04l.013-.011.002-.002c-.212-.234-.444-.448-.687-.646-.683-.593-1.51-1.045-2.448-1.293-.819-.217-1.645-.26-2.436-.15.5-1.184 1.371-2.172 2.52-2.821zm9.372 7.846c-.18-.307-.388-.59-.613-.857.04-.117.081-.235.114-.356.425-1.55.211-3.17-.603-4.562C15.25 1.66 13.933.662 12.356.244 10.778-.174 9.129.036 7.713.837c-1.214.686-2.13 1.737-2.636 3C2.806 4.226.851 5.86.212 8.188c-.879 3.2 1.056 6.505 4.313 7.368.532.14 1.066.208 1.591.208.358 0 .71-.033 1.056-.093.8.945 1.868 1.628 3.1 1.954.53.14 1.068.21 1.603.21 1.056 0 2.1-.272 3.04-.803 1.416-.8 2.43-2.095 2.856-3.645.426-1.55.211-3.17-.603-4.562z"
+                        mask="url(#vfvioedjtd)"
+                      ></path>
+                    </g>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.543 17.79c.047.003.093.002.14.003M15.845 16.298c.038-.033.073-.07.11-.104M16.236 15.922c.117-.125.23-.253.335-.387M.862 12.607c-.038-.072-.078-.144-.113-.217M1.362 6.377l.06-.082"
+                    ></path>
+                  </g></svg></a></span
+            ><style data-emotion="css h78qp4">
+              .css-h78qp4 {
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                color: #28519d;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                font-weight: bold;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                margin-left: 20px;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+              }</style
+            ><a
+              href="https://github.com/cancogen-virus-seq"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="css-h78qp4"
+              ><style data-emotion="css yuxif0">
+                .css-yuxif0 {
+                  width: 20;
+                  height: 20;
+                }</style
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                class="css-yuxif0"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#04518C">
+                    <g>
+                      <g>
+                        <g>
+                          <g>
+                            <g>
+                              <g>
+                                <g>
+                                  <path
+                                    d="M7.504 19.486v-1.743c-2.77.618-3.36-1.374-3.36-1.374-.173-.612-.556-1.143-1.08-1.5-.902-.633.07-.622.07-.622.646.094 1.21.485 1.529 1.055.534 1.03 1.798 1.43 2.826.897l.075-.042c.046-.517.27-1.003.632-1.374-2.215-.255-4.543-1.137-4.543-5.061-.018-1.014.35-1.997 1.026-2.75-.3-.884-.263-1.848.103-2.707 0 0 .837-.276 2.739 1.05 1.633-.462 3.363-.462 4.997 0 1.901-1.326 2.739-1.05 2.739-1.05.368.859.402 1.824.097 2.707.677.753 1.043 1.736 1.026 2.75 0 3.935-2.333 4.8-4.554 5.055.483.509.728 1.2.676 1.9v2.81c0 .335.178.59.686.492 4.115-1.455 6.853-5.37 6.811-9.743C20.065 4.649 15.6.066 10.023 0L9.973 0C4.396.071-.068 4.658.001 10.247c-.041 4.376 2.702 8.293 6.823 9.743.497.07.68-.244.68-.504"
+                                    transform="translate(-142 -555) translate(120 -25) translate(10) translate(0 273) translate(0 164) translate(0 132) translate(12 11)"
+                                  ></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g></svg
+              ><style data-emotion="css 1qkltea">
+                .css-1qkltea {
+                  margin-left: 5px;
+                }</style
+              ><span class="css-1qkltea">VirusSeq Github</span></a
+            >
+          </section>
+        </div>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "ctx": { "pathname": "/", "query": {}, "asPath": "/" }, "pageProps": null },
+        "page": "/",
+        "query": {},
+        "buildId": "yiC55JSoYZG18RggVID2F",
+        "runtimeConfig": {
+          "NEXT_PUBLIC_EGO_API_ROOT": "https://ego/api",
+          "NEXT_PUBLIC_EGO_CLIENT_ID": "portal",
+          "NEXT_PUBLIC_KEYCLOAK": "https://keycloak/",
+          "NEXT_PUBLIC_ARRANGER_PROJECT_ID": "cancogen_may06",
+          "NEXT_PUBLIC_ARRANGER_GRAPHQL_FIELD": "file",
+          "NEXT_PUBLIC_ARRANGER_INDEX": "file_centric",
+          "NEXT_PUBLIC_ARRANGER_API": "https://arranger/",
+          "NEXT_PUBLIC_ARRANGER_MANIFEST_COLUMNS": "repositories.code, analysis.analysis_id, object_id, file.index_file.file_type, file.index_file.name, file.index_file.size, file.index_file.md5sum, file.index_file.object_id, donors.donor_id, donors.specimens.samples.sample_id, study_id",
+          "NEXT_PUBLIC_BASE_PATH": "/",
+          "NEXT_PUBLIC_MUSE_API": "https://muse/",
+          "NEXT_PUBLIC_SSO_PROVIDERS": "GOOGLE,ORCID,GITHUB,LINKEDIN",
+          "NEXT_PUBLIC_SYSTEM_ALERTS": "[{\"dismissable\":true,\"id\":\"20210601-mantainence\",\"level\":\"warning\", \"title\": \"Scheduled Maintenance\", \"message\": \"Data exploration, download and upload are currently unavailable due to site maintenance.\"}]"
+        },
+        "nextExport": true,
+        "isFallback": false,
+        "gip": true,
+        "appGip": true,
+        "head": [
+          ["meta", { "name": "viewport", "content": "width=device-width" }],
+          ["meta", { "charSet": "utf-8" }],
+          ["link", { "rel": "shortcut icon", "href": "/images/favicon.ico" }],
+          ["title", { "children": "VirusSeq Portal" }]
+        ]
+      }
+    </script>
+    <script nomodule="" src="/_next/static/chunks/polyfills-2a32dcd0a819c274d356.js"></script>
+    <script src="/_next/static/chunks/main-8f280b5ee29b225cdeb6.js" async=""></script>
+    <script src="/_next/static/chunks/webpack-7ec3da4c8aacd407fbc9.js" async=""></script>
+    <script src="/_next/static/chunks/framework.64bf4370dab6af33a2f8.js" async=""></script>
+    <script src="/_next/static/chunks/29107295.3e37e48dae55c9a386d4.js" async=""></script>
+    <script src="/_next/static/chunks/commons.a9095aca9f8fd2a1db97.js" async=""></script>
+    <script
+      src="/_next/static/chunks/31d8d39b71590cb95a84f2c35ee19d66d1a35555.4919b08791280cf2cebd.js"
+      async=""
+    ></script>
+    <script src="/_next/static/chunks/pages/_app-929220933f39d354dd15.js" async=""></script>
+    <script
+      src="/_next/static/chunks/07e8549b6658ce238ffb45a8e89093641127c03d.fc95dfdee470ef47f6f1.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/415513b774a8d5fc9caa75de2ad616bf899449a5.2ec348f26453ac5c25c7.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/484c840239a025432effd6ecc373d498fa764368.a81d5a0e4f6383e42ea8.js"
+      async=""
+    ></script>
+    <script src="/_next/static/chunks/pages/index-3d34bf55913fbb5b902a.js" async=""></script>
+    <script src="/_next/static/yiC55JSoYZG18RggVID2F/_buildManifest.js" async=""></script>
+    <script src="/_next/static/yiC55JSoYZG18RggVID2F/_ssgManifest.js" async=""></script>
+  </body>
+</html>
