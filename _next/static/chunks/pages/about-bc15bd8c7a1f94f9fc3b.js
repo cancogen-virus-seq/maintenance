@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[19],{"8xRS":function(_,n,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/about",function(){return w("jXL8")}])}},[["8xRS",1,2,3,0,4,10,13]]]);
